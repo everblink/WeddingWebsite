@@ -6,6 +6,7 @@
 			<th><?php echo $this->Paginator->sort('FirstName'); ?></th>
 			<th><?php echo $this->Paginator->sort('LastName'); ?></th>
 			<th><?php echo $this->Paginator->sort('Email'); ?></th>
+			<th><?php echo $this->Paginator->sort('isLeadGuest?'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($guests as $guest): ?>
@@ -14,10 +15,11 @@
 		<td><?php echo h($guest['Guest']['FirstName']); ?>&nbsp;</td>
 		<td><?php echo h($guest['Guest']['LastName']); ?>&nbsp;</td>
 		<td><?php echo h($guest['Guest']['Email']); ?>&nbsp;</td>
+		<td><?php echo h($guest['Guest']['isLeadGuest']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $guest['Guest']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $guest['Guest']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $guest['Guest']['id']), null, __('Are you sure you want to delete # %s?', $guest['Guest']['id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $guest['Guest']['Id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $guest['Guest']['Id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $guest['Guest']['Id']), null, __('Are you sure you want to delete # %s?', $guest['Guest']['Id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

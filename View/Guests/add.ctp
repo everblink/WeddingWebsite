@@ -3,10 +3,10 @@
 	<fieldset>
 		<legend><?php echo __('Add Guest'); ?></legend>
 	<?php
-		echo $this->Form->input('Id');
 		echo $this->Form->input('FirstName');
 		echo $this->Form->input('LastName');
 		echo $this->Form->input('Email');
+		echo $this->Form->input('isLeadGuest');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
