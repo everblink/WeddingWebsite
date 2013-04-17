@@ -26,7 +26,7 @@ class Guest extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'FirstName' => array(
+		/*'FirstName' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
 				//'message' => 'Your custom message here',
@@ -61,7 +61,7 @@ class Guest extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
+		),*/
 		'Email' => array(
 			'email' => array(
 				'rule' => array('email'),
