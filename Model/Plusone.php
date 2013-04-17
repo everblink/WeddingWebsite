@@ -1,10 +1,11 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Guest Model
+ * Plusone Model
  *
+ * @property Guest $Guest
  */
-class Guest extends AppModel {
+class Plusone extends AppModel {
 
 /**
  * Primary key field
@@ -18,7 +19,7 @@ class Guest extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'FirstName';
+	public $displayField = 'Firstname';
 
 /**
  * Validation rules
@@ -26,7 +27,7 @@ class Guest extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'FirstName' => array(
+		'Firstname' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
 				//'message' => 'Your custom message here',
@@ -44,7 +45,7 @@ class Guest extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'LastName' => array(
+		'Lastname' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
 				//'message' => 'Your custom message here',
@@ -62,17 +63,7 @@ class Guest extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'Email' => array(
-			'email' => array(
-				'rule' => array('email'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'Username' => array(
+		'Dietary' => array(
 			'alphanumeric' => array(
 				'rule' => array('alphanumeric'),
 				//'message' => 'Your custom message here',
@@ -81,10 +72,8 @@ class Guest extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-		),
-		'Password' => array(
-			'notempty' => array(
-				'rule' => array('notempty'),
+			'maxlength' => array(
+				'rule' => array('maxlength'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -92,5 +81,22 @@ class Guest extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+	);
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Guest' => array(
+			'className' => 'Guest',
+			'foreignKey' => 'Guest_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
 	);
 }

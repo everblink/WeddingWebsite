@@ -21,11 +21,21 @@
 			<?php echo h($guest['Guest']['Email']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('isLeadGuest'); ?></dt>
+		<dt><?php echo __('Username'); ?></dt>
 		<dd>
-        	<?php if (h($guest['Guest']['isLeadGuest']) == 1)  echo "Yes";  else echo "No" ; ?>
-        	&nbsp;
-        </dd>
+			<?php echo h($guest['Guest']['Username']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Password'); ?></dt>
+		<dd>
+			<?php echo h($guest['Guest']['Password']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Role'); ?></dt>
+		<dd>
+			<?php echo h($guest['Guest']['Role']); ?>
+			&nbsp;
+		</dd>
 	</dl>
 </div>
 <div class="actions">
