@@ -1,33 +1,54 @@
-<!-- File: /wedding/View/Users/index.ctp -->
-<h1>User Administration</h1>
-
-<table>
-    <tr>
-        <th>Id</th>
-        <th>Title</th>
-		<th>Actions</th>
-        <th>Created</th>
-    </tr>
-
-    <!-- Here is where we loop through our $users array, printing out post info -->
-
-    <?php foreach ($users as $user): ?>
-    <tr>
-        <td><?php echo $user['User']['id']; ?></td>
-        <td>
-            <?php echo $this->Html->link
-			($user['User']['username'],array('controller' => 'users', 'action' => 'view', $user['User']['id'])); ?>
-        </td>
+<div class="users index">
+	<h2><?php echo __('Users'); ?></h2>
+	<table cellpadding="0" cellspacing="0">
+	<tr>
+			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<th><?php echo $this->Paginator->sort('username'); ?></th>
+			<th><?php echo $this->Paginator->sort('password'); ?></th>
+			<th><?php echo $this->Paginator->sort('role'); ?></th>
+			<th><?php echo $this->Paginator->sort('created'); ?></th>
+			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo $this->Paginator->sort('guest_id'); ?></th>
+			<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($users as $user): ?>
+	<tr>
+		<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['username']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['password']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['role']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['created']); ?>&nbsp;</td>
+		<td><?php echo h($user['User']['modified']); ?>&nbsp;</td>
 		<td>
-            <?php echo $this->Form->userLink(
-                'Delete',
-                array('action' => 'delete', $user['User']['id']),
-                array('confirm' => 'Are you sure?'));
-            ?>
-            <?php echo $this->Html->link('Edit', array('action' => 'edit', $user['User']['id'])); ?>
-        </td>
-        <td><?php echo $user['User']['created']; ?></td>
-    </tr>
-    <?php endforeach; ?>
-    <?php unset($user); ?>
-</table>
+			<?php echo $this->Html->link($user['Guest']['FirstName'], array('controller' => 'guests', 'action' => 'view', $user['Guest']['Id'])); ?>
+		</td>
+		<td class="actions">
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $user['User']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $user['User']['id']), null, __('Are you sure you want to delete # %s?', $user['User']['id'])); ?>
+		</td>
+	</tr>
+<?php endforeach; ?>
+	</table>
+	<p>
+	<?php
+	echo $this->Paginator->counter(array(
+	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	));
+	?>	</p>
+	<div class="paging">
+	<?php
+		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->numbers(array('separator' => ''));
+		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+	?>
+	</div>
+</div>
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('List Guests'), array('controller' => 'guests', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Guest'), array('controller' => 'guests', 'action' => 'add')); ?> </li>
+	</ul>
+</div>

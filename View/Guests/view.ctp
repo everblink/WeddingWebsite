@@ -21,21 +21,6 @@
 			<?php echo h($guest['Guest']['Email']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Username'); ?></dt>
-		<dd>
-			<?php echo h($guest['Guest']['Username']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Password'); ?></dt>
-		<dd>
-			<?php echo h($guest['Guest']['Password']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Role'); ?></dt>
-		<dd>
-			<?php echo h($guest['Guest']['Role']); ?>
-			&nbsp;
-		</dd>
 	</dl>
 </div>
 <div class="actions">

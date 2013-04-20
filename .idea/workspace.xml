@@ -29,10 +29,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UsersController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+            <state line="6" column="3" selection-start="102" selection-end="102" vertical-scroll-proportion="-0.954023">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="add.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/Users/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+            <state line="22" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="1" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.62528735">
+            <state line="34" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,11 +131,11 @@
         <option value="$PROJECT_DIR$/Model/Guest.php" />
         <option value="$PROJECT_DIR$/Model/Plusone.php" />
         <option value="$PROJECT_DIR$/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/Model/User.php" />
         <option value="$PROJECT_DIR$/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/View/Users/add.ctp" />
         <option value="$PROJECT_DIR$/View/Users/index.ctp" />
         <option value="$PROJECT_DIR$/View/Users/login.ctp" />
+        <option value="$PROJECT_DIR$/Model/User.php" />
       </list>
     </option>
   </component>
@@ -557,16 +557,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/Users/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -594,7 +587,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="1" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.62528735">
+        <state line="34" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/UsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="102" selection-end="102" vertical-scroll-proportion="-0.954023">
           <folding />
         </state>
       </provider>

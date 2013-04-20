@@ -1,33 +1,34 @@
 <?php
-// wedding/Model/User.php
-App::uses('AuthComponent', 'Controller/Component');
+App::uses('AppModel', 'Model');
+/**
+ * User Model
+ *
+ * @property Guest $Guest
+ */
 class User extends AppModel {
-    public $validate = array(
-        'username' => array(
-            'required' => array(
-                'rule' => array('notEmpty'),
-                'message' => 'A username is required'
-            )
-        ),
-        'password' => array(
-            'required' => array(
-                'rule' => array('notEmpty'),
-                'message' => 'A password is required'
-            )
-        ),
-        'role' => array(
-            'valid' => array(
-                'rule' => array('inList', array('admin', 'author')),
-                'message' => 'Please enter a valid role',
-                'allowEmpty' => false
-            )
-        )
-    );
 
-    public function beforeSave($options = array()) {
-        if (isset($this->data[$this->alias]['password'])) {
-            $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
-        }
-        return true;
-    }
+/**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'username';
+
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Guest' => array(
+			'className' => 'Guest',
+			'foreignKey' => 'guest_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 }

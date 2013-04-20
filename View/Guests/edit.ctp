@@ -7,9 +7,6 @@
 		echo $this->Form->input('FirstName');
 		echo $this->Form->input('LastName');
 		echo $this->Form->input('Email');
-		echo $this->Form->input('Username');
-		echo $this->Form->input('Password');
-		echo $this->Form->input('Role');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
