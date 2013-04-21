@@ -8,6 +8,40 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 
 /**
+ * method will be called for missing actions and scaffolded actions
+ *
+ * @return void
+ */
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('add');
+    }
+
+/**
+ * login method
+ *
+ * @return void
+ */
+    public function login() {
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                $this->redirect($this->Auth->redirect());
+            } else {
+                $this->Session->setFlash(__('Invalid username or password, try again'));
+            }
+        }
+    }
+
+/**
+ * logout method
+ *
+ * @return void
+ */
+    public function logout() {
+        $this->redirect($this->Auth->logout());
+    }
+
+/**
  * index method
  *
  * @return void
