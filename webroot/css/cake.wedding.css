@@ -22,11 +22,17 @@
     padding:0;
 }
 
+@font-face {
+    font-family: Gotham;
+    src: url(../css/Gotham-Book.otf);
+    font-weight:400;
+}
+
 /** General Style Info **/
 body {
     background: #C5F9EB;
     color: #fff;
-    font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
     font-size:90%;
     margin: 0;
 }
@@ -77,6 +83,8 @@ p {
 #container {
     text-align: left;
     display: block;
+    margin: auto;
+    width: 1024px;
 }
 
 #header{
@@ -102,20 +110,21 @@ p {
 #sidebar{
     background: #C5F9EB;
     background-image: url('../img/pattern.png');
-    color: #333;
     padding: 10px 20px 40px 20px;
     height: 768px;
     width: 200px;
     float: left;
+    overflow: auto;
 }
 #content{
     background: #C5F9EB;
     clear: both;
-    color: #333;
+    color: #3C4F46;
     padding: 10px 20px 40px 20px;
-    height: 768px;
     width: 824px;
     display: inline;
+    font-size: 12px;
+    overflow: auto;
 }
 #footer {
     clear: both;
@@ -141,15 +150,12 @@ div.actions h3 {
     padding-top:0;
     color:#777;
 }
-.clear {
-    clear: both;
-}
 
 /** Tables **/
 table {
     border-right:0;
     clear: both;
-    color: #333;
+    color: #3C4F46;
     margin-bottom: 10px;
     width: 100%;
 }
