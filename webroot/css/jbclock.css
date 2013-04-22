@@ -1,4 +1,8 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../css/Gotham-Book.otf);
 
+}
 
 .wrapper {
 	width:400px;
@@ -8,7 +12,7 @@
 
 h1 {
     color:#FFF;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Gotham, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size:30px;
     text-align: center;
@@ -19,7 +23,7 @@ h1 {
 }
 h4 {
     color:#fff;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Gotham, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size:18px;
     text-align: center;
@@ -58,7 +62,7 @@ h4 {
 }
 
 .bgLayer {
-    background-image:url("../img/clock_bg.png");
+    background-image:url("../img/clock_bg_green.png");
     width:122px;
     height:122px;
     background-repeat: no-repeat;
@@ -72,11 +76,10 @@ h4 {
     width:100%;
     height:100%;
     line-height: 122px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Gotham, Arial, Helvetica, sans-serif;
     font-size: 35px;
     color:#FFF;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #5295ac;
+    text-shadow: 1px 1px 1px #ADDBCD;
     text-align: center;
 }
 
@@ -84,16 +87,15 @@ h4 {
 .type_hours,
 .type_minutes,
 .type_seconds {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+    font-family:Gotham, Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color:#FFF;
-    background:#64b5d1;
+    /*background:#64b5d1;*/
     padding:5px;
     text-align: center;
     margin:0 auto;
     margin-top:10px;
     display: table;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px #5295ac;
+    text-shadow: 1px 1px 1px #ADDBCD;
 }
