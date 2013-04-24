@@ -63,7 +63,17 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 </head>
 <body>
 	<div id="container">
-		<div id="sidebar"></div>
+		<div id="sidebar">
+
+            <?php
+                echo $this->Html->link(
+                    $this->Html->image('doublehappiness.png',
+                        array('title' => 'Jeff\'s wedding', 'alt' => '')
+                    ),
+                    array('controller' => 'pages', 'action' => 'home'),
+                    array('escape' => false));
+            ?>
+		</div>
 		<div id="content">
 		    <div id="header">
                 <h1>JEFF + WAH YAN ARE GETTING MARRIED IN:</h1>
