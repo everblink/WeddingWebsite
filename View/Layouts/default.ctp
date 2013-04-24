@@ -65,58 +65,52 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 	<div id="container">
 		<div id="sidebar"></div>
 		<div id="content">
-            JEFF + WAH YAN ARE GETTING MARRIED IN:
-            <div class="clock">
-                <!-- Days -->
-                <div class="clock_days">
-                    <div class="bgLayer">
-                        <canvas id="canvas_days" width="122" height="122">
-                            Your browser does not support the HTML5 canvas tag.
-                        </canvas>
-                        <p class="val">0</p>
-                        <p class="type_days">Days</p>
-                    </div>
-                </div>
-                <!-- Days -->
-                <!-- Hours -->
-                <div class="clock_hours">
-                    <div class="bgLayer">
-                        <canvas id="canvas_hours" width="122" height="122">
-                            Your browser does not support the HTML5 canvas tag.
-                        </canvas>
-
-                        <p class="val">0</p>
-                        <p class="type_hours">Hours</p>
-                    </div>
-                </div>
-                <!-- Hours -->
-                <!-- Minutes -->
-                <div class="clock_minutes">
-                    <div class="bgLayer">
-                        <canvas id="canvas_minutes" width="122" height="122">
-                            Your browser does not support the HTML5 canvas tag.
-                        </canvas>
-                        <div class="text">
+		    <div id="header">
+                <h1>JEFF + WAH YAN ARE GETTING MARRIED IN:</h1>
+            </div>
+            <div class="wrapper">
+                <div class="clock">
+                    <div class="clock_days">
+                        <div class="bgLayer">
+                            <canvas id="canvas_days" width="122" height="122">
+                                Your browser does not support the HTML5 canvas tag.
+                            </canvas>
                             <p class="val">0</p>
-                            <p class="type_minutes">Minutes</p>
+                            <p class="type_days">Days</p>
+                        </div>
+                    </div>
+                    <div class="clock_hours">
+                        <div class="bgLayer">
+                            <canvas id="canvas_hours" width="122" height="122">
+                                Your browser does not support the HTML5 canvas tag.
+                            </canvas>
+
+                            <p class="val">0</p>
+                            <p class="type_hours">Hours</p>
+                        </div>
+                    </div>
+                    <div class="clock_minutes">
+                        <div class="bgLayer">
+                            <canvas id="canvas_minutes" width="122" height="122">
+                                Your browser does not support the HTML5 canvas tag.
+                            </canvas>
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type_minutes">Minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clock_seconds">
+                        <div class="bgLayer">
+                            <canvas id="canvas_seconds" width="122" height="122">
+                                Your browser does not support the HTML5 canvas tag.
+                            </canvas>
+                            <p class="val">0</p>
+                            <p class="type_seconds">Seconds</p>
                         </div>
                     </div>
                 </div>
-                <!-- Minutes -->
-                <!-- Seconds -->
-                <div class="clock_seconds">
-                    <div class="bgLayer">
-                        <canvas id="canvas_seconds" width="122" height="122">
-                            Your browser does not support the HTML5 canvas tag.
-                        </canvas>
-                        <p class="val">0</p>
-                        <p class="type_seconds">Seconds</p>
-                    </div>
-                </div>
-                <!-- Seconds -->
             </div>
-
-
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>
 		</div>
