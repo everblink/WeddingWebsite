@@ -99,21 +99,21 @@ p {
 #sidebar{
     background: #C5F9EB;
     background-image: url('../img/pattern.png');
-    padding: 10px 20px 40px 20px;
-    height: 768px;
+    height: 100%;
     width: 200px;
     float: left;
-    overflow: auto;
+    overflow: hidden;
+    position: absolute;
 }
 #content{
     background: #C5F9EB;
-    clear: both;
+    float: right;
     color: #3C4F46;
     padding: 10px 20px 40px 20px;
-    width: 824px;
-    display: inline;
+    width: 720px;
+    /*display: inline;*/
     font-size: 12px;
-    overflow: auto;
+    overflow: hidden;
 }
 #footer {
     clear: both;
@@ -122,14 +122,6 @@ p {
 }
 
 /** containers **/
-div.form,
-div.index,
-div.view {
-    float:right;
-    width:76%;
-
-    padding:110px 0px 0px 0px;
-}
 div.actions {
     float:left;
     width:16%;
@@ -360,20 +352,19 @@ input[type=radio] {
 input[type=submit] {
     display: inline;
     font-size: 110%;
-    width: auto;
+    width: 100px;
+    height: 40px;
+    background: #C5F9EB;
 }
 form .submit input[type=submit] {
-    background:#62af56;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
-    background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
-    background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
-    border-color: #2d6324;
-    color: #fff;
-    text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0px;
+    background-image:  url('../img/button_default.png');
+    border: none;
+    color: #3C4F46;
     padding: 8px 10px;
 }
 form .submit input[type=submit]:hover {
-    background: #5BA150;
+    background-image:  url('../img/button_hover.png');
+    color: #FFF;
 }
 /* Form errors */
 form .error {
@@ -409,7 +400,6 @@ form .error-message {
     clear: both;
     color: #fff;
     font-size: 140%;
-    font-weight: bold;
     margin: 0 0 1em 0;
     padding: 5px;
 }
@@ -518,24 +508,13 @@ input[type=submit],
 .actions a {
     font-weight:normal;
     padding: 4px 8px;
-    background: #dcdcdc;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#dcdcdc));
-    background-image: -webkit-linear-gradient(top, #fefefe, #dcdcdc);
-    background-image: -moz-linear-gradient(top, #fefefe, #dcdcdc);
-    background-image: -ms-linear-gradient(top, #fefefe, #dcdcdc);
-    background-image: -o-linear-gradient(top, #fefefe, #dcdcdc);
-    background-image: linear-gradient(top, #fefefe, #dcdcdc);
+    background: #C5F9EB;
     color:#333;
-    border:1px solid #bbb;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+
     border-radius: 4px;
     text-decoration: none;
     text-shadow: #fff 0px 1px 0px;
     min-width: 0;
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.2);
     -webkit-user-select: none;
     user-select: none;
 }
