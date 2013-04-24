@@ -64,14 +64,46 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 <body>
 	<div id="container">
 		<div id="sidebar">
-
             <?php
                 echo $this->Html->link(
                     $this->Html->image('doublehappiness.png',
-                        array('title' => 'Jeff\'s wedding', 'alt' => '')
+                        array('title' => 'Home', 'alt' => '')
                     ),
                     array('controller' => 'pages', 'action' => 'home'),
                     array('escape' => false));
+            ?>
+            <div class="image">
+            <?php
+                echo $this->Html->link(
+                                    $this->Html->image('menu_default.png',
+                                        array('title' => 'Where and When', 'alt' => '')
+                                    ),
+                                    array('controller' => 'pages', 'action' => 'home'),
+                                    array('escape' => false));
+            ?>
+            <h2><span>A Movie in the Park:<br />Kung Fu Panda</span></h2>
+            </div>
+            <?php
+                echo $this->Html->link(
+                                    $this->Html->image('menu_default.png',
+                                        array('title' => 'RSVP', 'alt' => '')
+                                    ),
+                                    array('controller' => 'rsvps', 'action' => 'add'),
+                                    array('escape' => false));
+
+                echo $this->Html->link(
+                                    $this->Html->image('menu_default.png',
+                                        array('title' => 'Banquet Menu', 'alt' => '')
+                                    ),
+                                    array('controller' => 'menus', 'action' => 'index'),
+                                    array('escape' => false));
+
+                echo $this->Html->link(
+                                    $this->Html->image('menu_default.png',
+                                        array('title' => 'Directions', 'alt' => '')
+                                    ),
+                                    array('controller' => 'directions', 'action' => 'index'),
+                                    array('escape' => false));
             ?>
 		</div>
 		<div id="content">
