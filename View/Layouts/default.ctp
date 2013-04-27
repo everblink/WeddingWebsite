@@ -72,39 +72,107 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     array('controller' => 'pages', 'action' => 'home'),
                     array('escape' => false));
             ?>
-            <div class="image">
-            <?php
-                echo $this->Html->link(
-                                    $this->Html->image('menu_default.png',
-                                        array('title' => 'Where and When', 'alt' => '')
-                                    ),
-                                    array('controller' => 'pages', 'action' => 'home'),
-                                    array('escape' => false));
-            ?>
-            <h2><span>A Movie in the Park:<br />Kung Fu Panda</span></h2>
+            <div class="image_wrapper">
+                <div class="image">
+                    <h2><span>WHERE & WHEN</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'Where and When', 'alt' => '')
+                                                ),
+                                                array('controller' => 'pages', 'action' => 'home'),
+                                                array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>RSVP</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'RSVP', 'alt' => '')
+                                                ),
+                                                array('controller' => 'rsvps', 'action' => 'add'),
+                                                array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>BANQUET MENU</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'Banquet Menu', 'alt' => '')
+                                                ),
+                                                array('controller' => 'menus', 'action' => 'index'),
+                                                array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>DIRECTIONS</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                        $this->Html->image('menu_default.png',
+                                            array('title' => 'Directions', 'alt' => '')
+                                        ),
+                                        array('controller' => 'directions', 'action' => 'index'),
+                                        array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>HOTELS</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'Hotels', 'alt' => '')
+                                                ),
+                                                array('controller' => 'hotels', 'action' => 'index'),
+                                                array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>REQUEST A SONG</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'Request A Song', 'alt' => '')
+                                                ),
+                                                array('controller' => 'songs', 'action' => 'index'),
+                                                array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>LEAVE US A NOTE</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'Leave Us A Note', 'alt' => '')
+                                                ),
+                                                array('controller' => 'messages', 'action' => 'add'),
+                                                array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>LEAVE US A NOTE</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'Leave Us A Note', 'alt' => '')
+                                                ),
+                                                array('controller' => 'messages', 'action' => 'add'),
+                                                array('escape' => false));
+                        ?>
+                </div>
+                <div class="image">
+                    <h2><span>GIFTS</span></h2>
+                        <?php
+                            echo $this->Html->link(
+                                                $this->Html->image('menu_default.png',
+                                                    array('title' => 'Gifts', 'alt' => '')
+                                                ),
+                                                array('controller' => 'gifts', 'action' => 'index'),
+                                                array('escape' => false));
+                        ?>
+                </div>
             </div>
-            <?php
-                echo $this->Html->link(
-                                    $this->Html->image('menu_default.png',
-                                        array('title' => 'RSVP', 'alt' => '')
-                                    ),
-                                    array('controller' => 'rsvps', 'action' => 'add'),
-                                    array('escape' => false));
-
-                echo $this->Html->link(
-                                    $this->Html->image('menu_default.png',
-                                        array('title' => 'Banquet Menu', 'alt' => '')
-                                    ),
-                                    array('controller' => 'menus', 'action' => 'index'),
-                                    array('escape' => false));
-
-                echo $this->Html->link(
-                                    $this->Html->image('menu_default.png',
-                                        array('title' => 'Directions', 'alt' => '')
-                                    ),
-                                    array('controller' => 'directions', 'action' => 'index'),
-                                    array('escape' => false));
-            ?>
 		</div>
 		<div id="content">
 		    <div id="header">

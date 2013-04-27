@@ -80,24 +80,34 @@ p {
     margin: 0 0 1em 0;
 }
 
+.image_wrapper {
+    position: absolute;
+    top: 234px;
+}
+
 .image {
     position: relative;
+    padding: 0px 0px 0px 0px;
+    height:41px;
 }
 
 .image h2 {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    width: 100%;
+    font-size:0px;
+    line-height:0px;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0);
+    -webkit-transform:matrix(1, 0, 0, 1, 0, 46);
+    -moz-transform:matrix(1, 0, 0, 1, 0, 46);
+    -o-transform:matrix(1, 0, 0, 1, 0, 46);
+    -ms-transform:matrix(1, 0, 0, 1, 0, 46);
+    transform:matrix(1, 0, 0, 1, 0, 46);
 }
 
 .image h2 span{
-    color: white;
-    font: bold 24px/45px Helvetica, Sans-Serif;
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
+    font-size:14px;
     letter-spacing: -1px;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
+    color:rgb(60, 79, 70);
 }
 
 /** Layout **/
