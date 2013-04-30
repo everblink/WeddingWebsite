@@ -17,4 +17,19 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 ?>
-I'm at home
+<div class="home_page_text">
+YOU ARE INVITED TO THE WEDDING OF<br/>
+<font class="home_page_couple_text">JEFF & WAH YAN</font><br/><br/>
+<?php echo  $this->Html->image('text_divider.png')?><br/><br/>
+CEREMONY WILL START AT 12 NOON<br/>
+AT MANCHESTER VICTORIA & ALBERT HOTEL<br/>
+PLEASE ARRIVE IN GOOD TIME<br/><br/>
+<?php echo  $this->Html->image('text_divider.png')?><br/><br/>
+CHINESE BANQUET WILL TAKE PLACE<br/>
+AT GLAMOROUS RESTAURANT<br/>
+PLEASE ARRIVE BY 3PM<br/><br/>
+<?php echo  $this->Html->image('text_divider.png')?><br/><br/>
+DRESS CODE<br/>
+PLEASE DRESS FORMAL<br/>
+MAKE YOURSELF LOOK GOOD
+</div>

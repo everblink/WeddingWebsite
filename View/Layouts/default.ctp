@@ -77,8 +77,9 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>WHERE & WHEN</span></h2>
                         <?php
                             echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
-                                                    array('title' => 'Where and When', 'alt' => '')
+                                                $this->Html->image('menu_default_twolines.png',
+                                                    array('title' => 'Where and When', 'alt' => ''),
+                                                    array('onmouseover' => "Tip('Test');")
                                                 ),
                                                 array('controller' => 'pages', 'action' => 'home'),
                                                 array('escape' => false));
@@ -88,7 +89,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>RSVP</span></h2>
                         <?php
                             echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
+                                                $this->Html->image('menu_default_twolines.png',
                                                     array('title' => 'RSVP', 'alt' => '')
                                                 ),
                                                 array('controller' => 'rsvps', 'action' => 'add'),
@@ -99,7 +100,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>BANQUET MENU</span></h2>
                         <?php
                             echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
+                                                $this->Html->image('menu_default_twolines.png',
                                                     array('title' => 'Banquet Menu', 'alt' => '')
                                                 ),
                                                 array('controller' => 'menus', 'action' => 'index'),
@@ -110,7 +111,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>DIRECTIONS</span></h2>
                         <?php
                             echo $this->Html->link(
-                                        $this->Html->image('menu_default.png',
+                                        $this->Html->image('menu_default_twolines.png',
                                             array('title' => 'Directions', 'alt' => '')
                                         ),
                                         array('controller' => 'directions', 'action' => 'index'),
@@ -121,7 +122,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>HOTELS</span></h2>
                         <?php
                             echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
+                                                $this->Html->image('menu_default_twolines.png',
                                                     array('title' => 'Hotels', 'alt' => '')
                                                 ),
                                                 array('controller' => 'hotels', 'action' => 'index'),
@@ -132,7 +133,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>REQUEST A SONG</span></h2>
                         <?php
                             echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
+                                                $this->Html->image('menu_default_twolines.png',
                                                     array('title' => 'Request A Song', 'alt' => '')
                                                 ),
                                                 array('controller' => 'songs', 'action' => 'index'),
@@ -143,18 +144,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>LEAVE US A NOTE</span></h2>
                         <?php
                             echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
-                                                    array('title' => 'Leave Us A Note', 'alt' => '')
-                                                ),
-                                                array('controller' => 'messages', 'action' => 'add'),
-                                                array('escape' => false));
-                        ?>
-                </div>
-                <div class="image">
-                    <h2><span>LEAVE US A NOTE</span></h2>
-                        <?php
-                            echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
+                                                $this->Html->image('menu_default_twolines.png',
                                                     array('title' => 'Leave Us A Note', 'alt' => '')
                                                 ),
                                                 array('controller' => 'messages', 'action' => 'add'),
@@ -165,7 +155,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <h2><span>GIFTS</span></h2>
                         <?php
                             echo $this->Html->link(
-                                                $this->Html->image('menu_default.png',
+                                                $this->Html->image('menu_default_twolines.png',
                                                     array('title' => 'Gifts', 'alt' => '')
                                                 ),
                                                 array('controller' => 'gifts', 'action' => 'index'),

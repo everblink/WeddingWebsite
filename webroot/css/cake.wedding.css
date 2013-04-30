@@ -88,8 +88,23 @@ p {
 .image {
     position: relative;
     padding: 0px 0px 0px 0px;
-    height:41px;
+    height:40px;
+    -webkit-transform:matrix(1, 0, 0, 1.1, 0, 0);
+    -moz-transform:matrix(1, 0, 0, 1.1, 0, 0);
+    -o-transform:matrix(1, 0, 0, 1.1, 0, 0);
+    -ms-transform:matrix(1, 0, 0, 1.1, 0, 0);
+    transform:matrix(1, 0, 0, 1.1, 0, 0);
+
+
+
+
 }
+/*
+.image a:hover {
+    background-image: url('../img/menu_hover.png');
+    color: #367889;
+    text-decoration:none;
+}*/
 
 .image h2 {
     font-size:0px;
@@ -345,8 +360,12 @@ input, textarea {
     clear: both;
     font-size: 140%;
     font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
-    padding: 1%;
-    width:98%;
+    background-image: url('../img/form_field.png');
+    background-color: transparent;
+    padding: 10px;
+    width: 320px;
+    height: 20px;
+    border: none;
 }
 select {
     clear: both;
@@ -381,7 +400,9 @@ input[type=radio] {
     line-height: 26px;
 }
 input[type=submit] {
+    position: relative;
     display: inline;
+    left: 10px;
     font-size: 110%;
     width: 100px;
     height: 40px;
@@ -389,6 +410,7 @@ input[type=submit] {
 }
 form .submit input[type=submit] {
     background-image:  url('../img/button_default.png');
+    background-repeat: no-repeat;
     border: none;
     color: #3C4F46;
     padding: 8px 10px;
@@ -397,6 +419,23 @@ form .submit input[type=submit]:hover {
     background-image:  url('../img/button_hover.png');
     color: #FFF;
 }
+
+/* Homepage text*/
+.home_page_text {
+    text-align: center;
+    padding-top: 35px;
+}
+.home_page_text {
+    font-size: 14px;
+}
+.home_page_couple_text {
+    font-size: 24px;
+}
+
+.home_page_divider {
+    background-image: url('../img/text_divider.png');
+}
+
 /* Form errors */
 form .error {
     background: #FFDACC;
