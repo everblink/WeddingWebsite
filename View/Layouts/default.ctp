@@ -63,6 +63,8 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 </head>
 <body>
 	<div id="container">
+	    <div id="left_sidebar"></div>
+	    <div id="right_sidebar"></div>
 		<div id="sidebar">
             <?php
                 echo $this->Html->link(

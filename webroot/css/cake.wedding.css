@@ -47,7 +47,7 @@ a:hover {
 }
 a img {
     border:none;
-    padding: 20px;
+    padding: 18px 20px;
 }
 h1, h2, h3, h4 {
     font-weight: normal;
@@ -61,7 +61,7 @@ h1 {
 h2 {
     background:#C5F9EB;
     color: #e32;
-    font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
     font-size: 190%;
 }
 h3 {
@@ -94,10 +94,6 @@ p {
     -o-transform:matrix(1, 0, 0, 1.1, 0, 0);
     -ms-transform:matrix(1, 0, 0, 1.1, 0, 0);
     transform:matrix(1, 0, 0, 1.1, 0, 0);
-
-
-
-
 }
 /*
 .image a:hover {
@@ -120,7 +116,7 @@ p {
 
 .image h2 span{
     font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
-    font-size:14px;
+    font-size:18px;
     letter-spacing: -1px;
     color:rgb(60, 79, 70);
 }
@@ -142,6 +138,15 @@ p {
     margin-top: 0px;
     text-shadow: 0px 0px 0px;
 }
+#left_sidebar{
+    background: #C5F9EB;
+    background-image: url('../img/pattern_left_edge.png');
+    height: 100%;
+    width: 8px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+}
 #sidebar{
     background: #C5F9EB;
     background-image: url('../img/pattern.png');
@@ -151,6 +156,18 @@ p {
     overflow: hidden;
     position: absolute;
 }
+#right_sidebar{
+    background: #C5F9EB;
+    background-image: url('../img/pattern_right_edge.png');
+    height: 100%;
+    width: 8px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    right: 1225px
+
+}
+
 #content{
     background: #C5F9EB;
     float: right;
@@ -366,6 +383,15 @@ input, textarea {
     width: 320px;
     height: 20px;
     border: none;
+
+}
+textarea {
+    margin: 0px;
+    height: 300px;
+    width: 320px;
+    background-image: url('../img/leaveusamessage_textarea.png');
+    resize: none;
+    overflow: auto;
 }
 select {
     clear: both;
@@ -403,7 +429,7 @@ input[type=submit] {
     position: relative;
     display: inline;
     left: 10px;
-    font-size: 110%;
+    font-size: 140%;
     width: 100px;
     height: 40px;
     background: #C5F9EB;
@@ -421,21 +447,21 @@ form .submit input[type=submit]:hover {
 }
 
 /* Homepage text*/
-.home_page_text {
+.home_page_text, .gifts, .directions, .hotels, .menus {
     text-align: center;
     padding-top: 35px;
-}
-.home_page_text {
-    font-size: 14px;
+    font-size: 16px;
 }
 .home_page_couple_text {
     font-size: 24px;
 }
-
 .home_page_divider {
     background-image: url('../img/text_divider.png');
 }
 
+.map_link {
+    font-size: 12px;
+}
 /* Form errors */
 form .error {
     background: #FFDACC;

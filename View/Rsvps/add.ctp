@@ -8,7 +8,7 @@
 		echo $this->Form->input('IsBanquet');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('SUBMIT')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

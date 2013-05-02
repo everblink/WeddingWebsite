@@ -31,5 +31,4 @@ PLEASE ARRIVE BY 3PM<br/><br/>
 <?php echo  $this->Html->image('text_divider.png')?><br/><br/>
 DRESS CODE<br/>
 PLEASE DRESS FORMAL<br/>
-MAKE YOURSELF LOOK GOOD
 </div>

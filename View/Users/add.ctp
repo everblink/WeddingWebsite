@@ -1,5 +1,5 @@
 <div class="users form">
-<?php echo $this->Form->create('User'); ?>
+<?php echo $this->Form->create('USER'); ?>
 	<fieldset>
 		<legend><?php echo __('Add User'); ?></legend>
 	<?php
@@ -9,7 +9,7 @@
 		echo $this->Form->input('guest_id');
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php echo $this->Form->end(__('SUBMIT')); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

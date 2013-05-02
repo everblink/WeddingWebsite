@@ -1,3 +1,3 @@
 <div class="hotels index">
-	<h2><?php echo __('Hotels'); ?></h2>
+	<h2><?php echo __('HOTELS'); ?></h2>
 </div>
