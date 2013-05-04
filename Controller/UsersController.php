@@ -8,12 +8,6 @@ App::uses('AppController', 'Controller');
 class UsersController extends AppController {
 
 /**
- * method will be called for missing actions and scaffolded actions
- *
- * @return void
- */
-
-/**
  * login method
  *
  * @return void

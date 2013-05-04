@@ -18,21 +18,21 @@ class User extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
- * hasOne associations
+ * belongsTo associations
  *
  * @var array
  */
-	public $hasOne = array(
-    		'Guest' => array(
-    			'className' => 'Guest',
-    			'foreignKey' => 'guest_id',
-    			'conditions' => '',
-    			'fields' => '',
-    			'order' => ''
-    		)
-    );
+	public $belongsTo = array(
+		'Guest' => array(
+			'className' => 'Guest',
+			'foreignKey' => 'guest_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 
-    public function beforeSave($options = array()) {
+	public function beforeSave($options = array()) {
         if (isset($this->data[$this->alias]['password'])) {
             $this->data[$this->alias]['password'] = AuthComponent::password($this->data[$this->alias]['password']);
         }
