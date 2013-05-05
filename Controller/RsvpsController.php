@@ -48,6 +48,8 @@ class RsvpsController extends AppController {
 			}
 		}
 		$guests = $this->Rsvp->Guest->find('list');
+		$user = $this->Auth->user('guest_id');
+		$this->set('user', $user);
 		$this->set(compact('guests'));
 	}
 

@@ -3,7 +3,7 @@
 	<fieldset>
 		<legend><?php echo __('Add Message'); ?></legend>
 	<?php
-		echo $this->Form->input('guest_id', array());
+		echo $this->Form->input('guest_id', array('value' => $user));
 		echo $this->Form->textarea('Message');
 	?>
 	</fieldset>

@@ -138,6 +138,11 @@ p {
     margin-top: 0px;
     text-shadow: 0px 0px 0px;
 }
+#sidebar_wrapper{
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+}
 #left_sidebar{
     background: #C5F9EB;
     background-image: url('../img/pattern_left_edge.png');
@@ -146,6 +151,11 @@ p {
     float: left;
     overflow: hidden;
     position: absolute;
+    -webkit-transform:matrix(1, 0, 0, 1, -8, 0);
+    -moz-transform:matrix(1, 0, 0, 1, -8, 0);
+    -o-transform:matrix(1, 0, 0, 1, -8, 0);
+    -ms-transform:matrix(1, 0, 0, 1, -8, 0);
+    transform:matrix(1, 0, 0, 1, -8, 0);
 }
 #sidebar{
     background: #C5F9EB;
@@ -164,7 +174,11 @@ p {
     float: left;
     overflow: hidden;
     position: absolute;
-    right: 1225px
+    -webkit-transform:matrix(1, 0, 0, 1, 240, 0);
+    -moz-transform:matrix(1, 0, 0, 1, 240, 0);
+    -o-transform:matrix(1, 0, 0, 1, 240, 0);
+    -ms-transform:matrix(1, 0, 0, 1, 240, 0);
+    transform:matrix(1, 0, 0, 1, 240, 0);
 
 }
 
@@ -447,7 +461,7 @@ form .submit input[type=submit]:hover {
 }
 
 /* Homepage text*/
-.home_page_text, .gifts, .directions, .hotels, .menus {
+.home_page_text, .gifts, .directions, .hotels, .menus, .menu_text, .hotels_text {
     text-align: center;
     padding-top: 35px;
     font-size: 16px;

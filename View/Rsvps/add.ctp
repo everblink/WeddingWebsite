@@ -3,9 +3,10 @@
 	<fieldset>
 		<legend><?php echo __('Add Rsvp'); ?></legend>
 	<?php
-		echo $this->Form->input('Guest_id');
+		echo $this->Form->input('Guest_id', array('value' => $user));
 		echo $this->Form->input('IsCeremony');
 		echo $this->Form->input('IsBanquet');
+		echo $user;
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('SUBMIT')); ?>
