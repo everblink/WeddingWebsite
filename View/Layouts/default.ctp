@@ -69,18 +69,17 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                 <?php
                     echo $this->Html->link(
                         $this->Html->image('doublehappiness.png',
-                            array('title' => 'Home', 'alt' => '')
+                            array('title' => 'Home - This Means Double Happiness :)', 'alt' => 'Home - This Means Double Happiness :)')
                         ),
                         array('controller' => 'pages', 'action' => 'home'),
                         array('escape' => false));
                 ?>
                 <div class="image_wrapper">
                     <div class="image">
-                        <h2><span>WHERE & WHEN</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                                    $this->Html->image('menu_default_twolines.png',
-                                                        array('title' => 'Where and When', 'alt' => ''),
+                                                    $this->Html->image('menu_where_when_default.png',
+                                                        array('title' => 'Where and When', 'alt' => 'Where and When'),
                                                         array('onmouseover' => "Tip('Test');")
                                                     ),
                                                     array('controller' => 'pages', 'action' => 'home'),
@@ -88,77 +87,70 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             ?>
                     </div>
                     <div class="image">
-                        <h2><span>RSVP</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                                    $this->Html->image('menu_default_twolines.png',
-                                                        array('title' => 'RSVP', 'alt' => '')
+                                                    $this->Html->image('menu_rsvp_default.png',
+                                                        array('title' => 'RSVP', 'alt' => 'RSVP')
                                                     ),
                                                     array('controller' => 'rsvps', 'action' => 'add'),
                                                     array('escape' => false));
                             ?>
                     </div>
                     <div class="image">
-                        <h2><span>BANQUET MENU</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                                    $this->Html->image('menu_default_twolines.png',
-                                                        array('title' => 'Banquet Menu', 'alt' => '')
+                                                    $this->Html->image('menu_banquet_default.png',
+                                                        array('title' => 'Banquet Menu', 'alt' => 'Banquet Menu')
                                                     ),
                                                     array('controller' => 'menus', 'action' => 'index'),
                                                     array('escape' => false));
                             ?>
                     </div>
                     <div class="image">
-                        <h2><span>DIRECTIONS</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                            $this->Html->image('menu_default_twolines.png',
-                                                array('title' => 'Directions', 'alt' => '')
+                                            $this->Html->image('menu_directions_default.png',
+                                                array('title' => 'Directions', 'alt' => 'Directions')
                                             ),
                                             array('controller' => 'directions', 'action' => 'index'),
                                             array('escape' => false));
                             ?>
                     </div>
                     <div class="image">
-                        <h2><span>HOTELS</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                                    $this->Html->image('menu_default_twolines.png',
-                                                        array('title' => 'Hotels', 'alt' => '')
+                                                    $this->Html->image('menu_hotels_default.png',
+                                                        array('title' => 'Hotels', 'alt' => 'Hotels')
                                                     ),
                                                     array('controller' => 'hotels', 'action' => 'index'),
                                                     array('escape' => false));
                             ?>
                     </div>
                     <div class="image">
-                        <h2><span>REQUEST A SONG</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                                    $this->Html->image('menu_default_twolines.png',
-                                                        array('title' => 'Request A Song', 'alt' => '')
+                                                    $this->Html->image('menu_request_default.png',
+                                                        array('title' => 'Request A Song', 'alt' => 'Request A Song')
                                                     ),
-                                                    array('controller' => 'songs', 'action' => 'index'),
+                                                    array('controller' => 'songs', 'action' => 'add'),
                                                     array('escape' => false));
                             ?>
                     </div>
                     <div class="image">
-                        <h2><span>LEAVE US A NOTE</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                                    $this->Html->image('menu_default_twolines.png',
-                                                        array('title' => 'Leave Us A Note', 'alt' => '')
+                                                    $this->Html->image('menu_leavenote_default.png',
+                                                        array('title' => 'Leave Us A Note', 'alt' => 'Leave Us A Note')
                                                     ),
                                                     array('controller' => 'messages', 'action' => 'add'),
                                                     array('escape' => false));
                             ?>
                     </div>
                     <div class="image">
-                        <h2><span>GIFTS</span></h2>
                             <?php
                                 echo $this->Html->link(
-                                                    $this->Html->image('menu_default_twolines.png',
-                                                        array('title' => 'Gifts', 'alt' => '')
+                                                    $this->Html->image('menu_gifts_default.png',
+                                                        array('title' => 'Gifts', 'alt' => 'Gifts', 'id' => 'gifts_style')
                                                     ),
                                                     array('controller' => 'gifts', 'action' => 'index'),
                                                     array('escape' => false));

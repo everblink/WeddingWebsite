@@ -34,29 +34,15 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
     public $helpers = array('Form', 'Html', 'Js', 'Time');
 
-    //var $components  = array('Auth');
-   // var $helpers = array('Auth');
-
     public $components = array(
             'Session',
             'Auth' => array(
                 'loginRedirect' => array('controller' => 'pages', 'action' => 'index'),
                 'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home')
             )
-        );
+    );
 
     public function beforeFilter() {
         $this->Auth->deny();
-        //$this->initAuth();
     }
-
-    /**
-     * Setup Authentication Component
-    */
-   //protected function initAuth(){
-   //    $this->Auth->sessionKey = 'SomeRandomStringValue';
-   //    $this->set('authSessionKey', $this->Auth->sessionKey);
-   // }
-
-//    public function
 }

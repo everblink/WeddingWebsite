@@ -47,8 +47,9 @@ a:hover {
 }
 a img {
     border:none;
-    padding: 18px 20px;
+    padding: 24px 20px;
 }
+
 h1, h2, h3, h4 {
     font-weight: normal;
     margin-bottom:0.5em;
@@ -60,7 +61,7 @@ h1 {
 }
 h2 {
     background:#C5F9EB;
-    color: #e32;
+    color: #3C4F46;
     font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
     font-size: 190%;
 }
@@ -94,6 +95,10 @@ p {
     -o-transform:matrix(1, 0, 0, 1.1, 0, 0);
     -ms-transform:matrix(1, 0, 0, 1.1, 0, 0);
     transform:matrix(1, 0, 0, 1.1, 0, 0);
+}
+
+.image_background_request {
+    background-image: url('../img/menu_request_default.png');
 }
 /*
 .image a:hover {
@@ -179,7 +184,6 @@ p {
     -o-transform:matrix(1, 0, 0, 1, 240, 0);
     -ms-transform:matrix(1, 0, 0, 1, 240, 0);
     transform:matrix(1, 0, 0, 1, 240, 0);
-
 }
 
 #content{
@@ -337,15 +341,17 @@ form {
     clear: both;
     margin-right: 20px;
     padding: 0;
+
     width: 95%;
 }
 fieldset {
     border: none;
     margin-bottom: 1em;
     padding: 16px 10px;
+    font-size: 15px;
 }
-fieldset legend {
-    color: #e32;
+fieldset h2 {
+    color: #3C4F46;
     font-size: 160%;
 }
 fieldset fieldset {
@@ -389,7 +395,7 @@ label {
 }
 input, textarea {
     clear: both;
-    font-size: 140%;
+    font-size: 18px;
     font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
     background-image: url('../img/form_field.png');
     background-color: transparent;
@@ -420,9 +426,10 @@ option {
     padding: 0 3px;
 }
 input[type=checkbox] {
+    background-image: url('../img/form_tickbox.png');
     clear: left;
     float: left;
-    margin: 0px 6px 7px 2px;
+    margin: 0px 0px 3px 35px;
     width: auto;
 }
 div.checkbox label {
@@ -461,7 +468,7 @@ form .submit input[type=submit]:hover {
 }
 
 /* Homepage text*/
-.home_page_text, .gifts, .directions, .hotels, .menus, .menu_text, .hotels_text {
+.home_page_text, .gifts, .directions, .hotels, .menus, .menu_text, .hotels_text, .rsvp_text {
     text-align: center;
     padding-top: 35px;
     font-size: 16px;
