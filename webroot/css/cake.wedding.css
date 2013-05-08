@@ -203,7 +203,15 @@ p {
 }
 
 .rsvp_checkboxes {
-    
+    text-align: left;
+    width: 400px;
+    padding: 0px;
+    -webkit-transform:matrix(1, 0, 0, 1, 153, 0);
+    -moz-transform:matrix(1, 0, 0, 1, 153, 0);
+    -o-transform:matrix(1, 0, 0, 1, 153, 0);
+    -ms-transform:matrix(1, 0, 0, 1, 153, 0);
+    transform:matrix(1, 0, 0, 1, 153, 0);
+
 }
 
 /** containers **/
@@ -450,6 +458,11 @@ input[type="checkbox"] + label span {
 
 input[type="checkbox"]:checked + label span {
     background:url('../img/delete_form_field_default.png') no-repeat;
+}
+
+div.checkbox{
+    margin: 0px;
+    padding: 0.5px;
 }
 
 div.checkbox label {

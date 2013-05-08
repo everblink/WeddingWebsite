@@ -11,14 +11,9 @@
 			<?php echo $this->Html->link($plusone['Guest']['FirstName'], array('controller' => 'guests', 'action' => 'view', $plusone['Guest']['Id'])); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Firstname'); ?></dt>
+		<dt><?php echo __('Name'); ?></dt>
 		<dd>
-			<?php echo h($plusone['Plusone']['Firstname']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Lastname'); ?></dt>
-		<dd>
-			<?php echo h($plusone['Plusone']['Lastname']); ?>
+			<?php echo h($plusone['Plusone']['Name']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Dietary'); ?></dt>

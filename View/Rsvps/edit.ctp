@@ -7,6 +7,7 @@
 		echo $this->Form->input('Guest_id');
 		echo $this->Form->input('IsCeremony');
 		echo $this->Form->input('IsBanquet');
+		echo $this->Form->input('IsNotAttending');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

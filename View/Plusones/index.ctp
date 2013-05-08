@@ -4,8 +4,7 @@
 	<tr>
 			<th><?php echo $this->Paginator->sort('Id'); ?></th>
 			<th><?php echo $this->Paginator->sort('Guest_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('Firstname'); ?></th>
-			<th><?php echo $this->Paginator->sort('Lastname'); ?></th>
+			<th><?php echo $this->Paginator->sort('Name'); ?></th>
 			<th><?php echo $this->Paginator->sort('Dietary'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -15,8 +14,7 @@
 		<td>
 			<?php echo $this->Html->link($plusone['Guest']['FirstName'], array('controller' => 'guests', 'action' => 'view', $plusone['Guest']['Id'])); ?>
 		</td>
-		<td><?php echo h($plusone['Plusone']['Firstname']); ?>&nbsp;</td>
-		<td><?php echo h($plusone['Plusone']['Lastname']); ?>&nbsp;</td>
+		<td><?php echo h($plusone['Plusone']['Name']); ?>&nbsp;</td>
 		<td><?php echo h($plusone['Plusone']['Dietary']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $plusone['Plusone']['Id'])); ?>

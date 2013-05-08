@@ -6,16 +6,18 @@
 			<th><?php echo $this->Paginator->sort('Guest_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('IsCeremony'); ?></th>
 			<th><?php echo $this->Paginator->sort('IsBanquet'); ?></th>
+			<th><?php echo $this->Paginator->sort('IsNotAttending'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($rsvps as $rsvp): ?>
 	<tr>
 		<td><?php echo h($rsvp['Rsvp']['Id']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($rsvp['Guest']['Id'], array('controller' => 'guests', 'action' => 'view', $rsvp['Guest']['Id'])); ?>
+			<?php echo $this->Html->link($rsvp['Guest']['FirstName'], array('controller' => 'guests', 'action' => 'view', $rsvp['Guest']['Id'])); ?>
 		</td>
 		<td><?php echo h($rsvp['Rsvp']['IsCeremony']); ?>&nbsp;</td>
 		<td><?php echo h($rsvp['Rsvp']['IsBanquet']); ?>&nbsp;</td>
+		<td><?php echo h($rsvp['Rsvp']['IsNotAttending']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $rsvp['Rsvp']['Id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $rsvp['Rsvp']['Id'])); ?>

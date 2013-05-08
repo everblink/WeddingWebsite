@@ -5,8 +5,7 @@
 	<?php
 		echo $this->Form->input('Id');
 		echo $this->Form->input('Guest_id');
-		echo $this->Form->input('Firstname');
-		echo $this->Form->input('Lastname');
+		echo $this->Form->input('Name');
 		echo $this->Form->input('Dietary');
 	?>
 	</fieldset>

@@ -19,7 +19,7 @@ class Rsvp extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'IsCeremony';
+	public $displayField = 'Guest_id';
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

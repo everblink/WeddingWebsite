@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Guest'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($rsvp['Guest']['Id'], array('controller' => 'guests', 'action' => 'view', $rsvp['Guest']['Id'])); ?>
+			<?php echo $this->Html->link($rsvp['Guest']['FirstName'], array('controller' => 'guests', 'action' => 'view', $rsvp['Guest']['Id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('IsCeremony'); ?></dt>
@@ -19,6 +19,11 @@
 		<dt><?php echo __('IsBanquet'); ?></dt>
 		<dd>
 			<?php echo h($rsvp['Rsvp']['IsBanquet']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('IsNotAttending'); ?></dt>
+		<dd>
+			<?php echo h($rsvp['Rsvp']['IsNotAttending']); ?>
 			&nbsp;
 		</dd>
 	</dl>

@@ -38,22 +38,25 @@ class RsvpsController extends AppController {
  * @return void
  */
 	public function add() {
-		if ($this->request->is('post')) {
-			$this->Rsvp->create();
-			if ($this->Rsvp->save($this->request->data)) {
-				$this->Session->setFlash(__('The rsvp has been saved'));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The rsvp could not be saved. Please, try again.'));
-			}
-		}
-		$guests = $this->Rsvp->Guest->find('list');
-		$user = $this->Auth->user('guest_id');
-		$role = $this->Auth->user('role');
-		$this->set('user', $user);
-		$this->set('role', $role);
-		$this->set(compact('guests'));
-	}
+        if ($this->request->is('post')) {
+            $this->Rsvp->create();
+            $this->Rsvp->Guest->Plusone->create();
+            if ($this->Rsvp->save($this->request->data['Rsvp']) && $this->Rsvp->Guest->Plusone->save($this->request->data['Plusone'])) {
+                $this->Session->setFlash(__('The rsvp has been saved'));
+                $this->redirect(array('action' => 'success'));
+            } else {
+                $this->Session->setFlash(__('The rsvp could not be saved. Please, try again.'));
+            }
+        }
+
+        $guests = $this->Rsvp->Guest->find('list');
+        $user = $this->Auth->user('guest_id');
+        $role = $this->Auth->user('role');
+
+        $this->set('user', $user);
+        $this->set('role', $role);
+        $this->set(compact('guests'));
+    }
 
 /**
  * edit method

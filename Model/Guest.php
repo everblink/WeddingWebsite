@@ -20,4 +20,17 @@ class Guest extends AppModel {
  */
 	public $displayField = 'FirstName';
 
+/**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+        'Plusone' => array(
+            'className'     => 'Plusone',
+            'foreignKey'    => 'Guest_id',
+            'conditions'    => '',
+            'order'         => ''
+        )
+    );
 }

@@ -1,17 +1,23 @@
+<?php echo $this->Html->script('../js/rsvp'); ?>
 <div class="rsvps form">
 <?php echo $this->Form->create('Rsvp'); ?>
     <div class="rsvp_text">
 		<h2><?php echo __('RSVP'); ?></h2><br/>
-		PLEASE LET US KNOW IF YOU WILL BE ATTENDING BY 1ST JULY 2013<br/><br/>
+		LET US KNOW IF YOU WILL BE ATTENDING BY 1ST JULY 2013<br/>
+		PLEASE TICK ALL THAT APPLY:<br/><br/>
 		<div class="rsvp_checkboxes">
             <?php
-                echo $this->Form->input('Guest_id', array('value' => $user, 'type' => 'hidden'));
-                echo $this->Form->input('IsCeremony',
-                                            array('label' => '<span></span>I WILL BE ATTENDING THE CEREMONY')
-                                        );
-                echo $this->Form->input('IsBanquet',
-                                            array('label' => '<span></span>I WILL BE ATTENDING THE BANQUET')
-                                        );
+                echo $this->Form->create('Rsvp', array('action' => 'add'));
+
+                echo $this->Form->input('Rsvp.Guest_id', array('value' => $user, 'type' => 'hidden'));
+                echo $this->Form->input('Rsvp.IsCeremony', array('label' => '<span></span>I WILL BE ATTENDING THE CEREMONY'));
+                echo $this->Form->input('Rsvp.IsBanquet', array('label' => '<span></span>I WILL BE ATTENDING THE BANQUET'));
+                echo $this->Form->input('Rsvp.IsNotAttending', array('label' => '<span></span>SORRY I/WE CAN\'T MAKE IT', 'onclick' => 'notAttending(this)'));
+            ?>
+            <br/>ADD EXTRA GUEST(S) (IF APPLICABLE)
+            <?php
+                echo $this->Form->input('Plusone.Guest_id', array('value' => $user, 'type' => 'hidden'));
+                echo $this->Form->input('Plusone.Name', array('label' => ''));
             ?>
         </div>
     </div>

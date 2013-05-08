@@ -19,16 +19,8 @@ class Plusone extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'Firstname';
+	public $displayField = 'Name';
 
-/**
- * Validation rules
- *
- * @var array
- */
-	public $validate = array(
-
-	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
