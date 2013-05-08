@@ -10,9 +10,9 @@
                 echo $this->Form->create('Rsvp', array('action' => 'add'));
 
                 echo $this->Form->input('Rsvp.Guest_id', array('value' => $user, 'type' => 'hidden'));
-                echo $this->Form->input('Rsvp.IsCeremony', array('label' => '<span></span>I WILL BE ATTENDING THE CEREMONY'));
-                echo $this->Form->input('Rsvp.IsBanquet', array('label' => '<span></span>I WILL BE ATTENDING THE BANQUET'));
-                echo $this->Form->input('Rsvp.IsNotAttending', array('label' => '<span></span>SORRY I/WE CAN\'T MAKE IT', 'onclick' => 'notAttending(this)'));
+                echo $this->Form->input('Rsvp.IsCeremony', array('label' => '<span></span>I WILL BE ATTENDING THE CEREMONY', 'onclick' => 'clearNotAttending()'));
+                echo $this->Form->input('Rsvp.IsBanquet', array('label' => '<span></span>I WILL BE ATTENDING THE BANQUET', 'onclick' => 'clearNotAttending()'));
+                echo $this->Form->input('Rsvp.IsNotAttending', array('label' => '<span></span>SORRY I/WE CAN\'T MAKE IT', 'onclick' => 'notAttending()'));
             ?>
             <br/>ADD EXTRA GUEST(S) (IF APPLICABLE)
             <?php
