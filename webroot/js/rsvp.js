@@ -52,29 +52,39 @@ function clearNotAttending(){
  *  the banquet checkbox is checked.
  * */
 function addPlusone() {
-    var ni = document.getElementById('extra_input');
-    var numi = document.getElementById('theValue');
-    var num = (document.getElementById('theValue').value -1)+ 2;
-    var newdiv = document.createElement('input');
-    numi.value = num;
+    var parentDiv = document.getElementById('plusone_input');
+    var numericalValue = document.getElementById('RsvpIncrementalValue');
+    var incrementalValue = (document.getElementById('RsvpIncrementalValue').value -1)+ 2;
 
-    var divIdName = 'my'+num+'Div';
+    var newTextInput = document.createElement('input');
+    var newRemoveButton = document.createElement('input');
+    numericalValue.value = incrementalValue;
 
-    newdiv.setAttribute('id',divIdName);
+    var inputTextName = 'data[Rsvp]['+incrementalValue+'][Name]';
+    var buttonName = 'data[Rsvp]['+incrementalValue+'button][Name]';
 
-    ni.appendChild(newdiv);
+    newTextInput.setAttribute('id',inputTextName);
 
+    newRemoveButton.setAttribute('id',buttonName);
+    newRemoveButton.setAttribute('type', 'button');
+    newRemoveButton.setAttribute('onclick', 'removePlusone("'+buttonName+'","'+ inputTextName+'");');
+    newRemoveButton.setAttribute('class', 'removeButton');
+
+    parentDiv.appendChild(newRemoveButton);
+    parentDiv.appendChild(newTextInput);
 }
 
 /**
  *  Function that clears the not attending checkbox when either of the ceremony or
  *  the banquet checkbox is checked.
  * */
-function removePlusone(divNum) {
+function removePlusone(button, inputText) {
 
-    var d = document.getElementById('extra_input');
-    var olddiv = document.getElementById(divNum);
+    var d = document.getElementById('plusone_input');
+    var oldButton = document.getElementById(button);
+    var oldInputText = document.getElementById(inputText);
 
-    d.removeChild(olddiv);
+    d.removeChild(oldButton);
+    d.removeChild(oldInputText);
 
 }
