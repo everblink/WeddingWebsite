@@ -211,7 +211,21 @@ p {
     -o-transform:matrix(1, 0, 0, 1, 153, 0);
     -ms-transform:matrix(1, 0, 0, 1, 153, 0);
     transform:matrix(1, 0, 0, 1, 153, 0);
+}
 
+#add_plusone_button {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/add_form_field_default.png');
+    cursor: pointer;
+}
+
+#add_plusone_button:hover {
+    background-image: url('../img/add_form_field_default.png');
+}
+
+.plusone_input {
+    padding: 0px;
 }
 
 /** containers **/

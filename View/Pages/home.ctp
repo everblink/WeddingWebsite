@@ -27,7 +27,7 @@ PLEASE ARRIVE IN GOOD TIME<br/><br/>
 <?php echo  $this->Html->image('text_divider.png')?><br/><br/>
 CHINESE BANQUET WILL TAKE PLACE<br/>
 AT GLAMOROUS RESTAURANT<br/>
-PLEASE ARRIVE BY 3PM<br/><br/>
+PLEASE ARRIVE BETWEEN 2PM AND 3PM<br/><br/>
 <?php echo  $this->Html->image('text_divider.png')?><br/><br/>
 DRESS CODE<br/>
 PLEASE DRESS FORMAL<br/>

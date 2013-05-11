@@ -43,7 +43,7 @@ class RsvpsController extends AppController {
             $this->Rsvp->Guest->Plusone->create();
             if ($this->Rsvp->save($this->request->data['Rsvp']) && $this->Rsvp->Guest->Plusone->save($this->request->data['Plusone'])) {
                 $this->Session->setFlash(__('The rsvp has been saved'));
-                $this->redirect(array('action' => 'success'));
+                $this->redirect(array('action' => 'add'));
             } else {
                 $this->Session->setFlash(__('The rsvp could not be saved. Please, try again.'));
             }
@@ -105,3 +105,4 @@ class RsvpsController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 }
+

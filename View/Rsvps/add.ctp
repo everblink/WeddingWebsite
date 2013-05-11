@@ -15,10 +15,15 @@
                 echo $this->Form->input('Rsvp.IsNotAttending', array('label' => '<span></span>SORRY I/WE CAN\'T MAKE IT', 'onclick' => 'notAttending()'));
             ?>
             <br/>ADD EXTRA GUEST(S) (IF APPLICABLE)
-            <?php
-                echo $this->Form->input('Plusone.Guest_id', array('value' => $user, 'type' => 'hidden'));
-                echo $this->Form->input('Plusone.Name', array('label' => ''));
-            ?>
+            <div class="plusone_input">
+                <br/><input name="add_plusone_button" id="add_plusone_button" type="button" onclick="addPlusone();">
+                <?php
+                    echo $this->Form->input('Plusone.Guest_id', array('value' => $user, 'type' => 'hidden'));
+                    echo $this->Form->input('Plusone.Name', array('label' => false, 'div' => false));
+                    echo $this->Form->input('incremental_value', array('value' => '0', 'type' => 'hidden'));
+                ?>
+
+            </div>
         </div>
     </div>
 <?php echo $this->Form->end(__('SUBMIT')); ?>

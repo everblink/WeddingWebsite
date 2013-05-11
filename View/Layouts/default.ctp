@@ -73,6 +73,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                         ),
                         array('controller' => 'pages', 'action' => 'home'),
                         array('escape' => false));
+
                 ?>
                 <div class="image_wrapper">
                     <div class="image">
@@ -156,6 +157,18 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                                                     array('escape' => false));
                             ?>
                     </div>
+                    <?php
+                        if ($this->Session->check('Auth.User') == true){
+                            echo "<div class=\"image\">".
+                                $this->Html->link(
+                                            $this->Html->image('menu_logout_default.png',
+                                                    array('title' => 'Logout', 'alt' => 'Logout', 'id' => 'logout_style')
+                                                    ),
+                                                    array('controller' => 'users', 'action' => 'logout'),
+                                                    array('escape' => false));
+                            echo "</div>";
+                        }
+                    ?>
                 </div>
             </div>
             <div id="right_sidebar"></div>
