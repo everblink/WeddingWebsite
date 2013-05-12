@@ -54,7 +54,7 @@ function clearNotAttending(){
 function addPlusone() {
     var parentDiv = document.getElementById('plusone_input');
     var numericalValue = document.getElementById('RsvpIncrementalValue');
-    var incrementalValue = (document.getElementById('RsvpIncrementalValue').value -1)+ 2;
+    var incrementalValue = (document.getElementById('RsvpIncrementalValue').value -2)+ 2;
 
     var newTextInput = document.createElement('input');
     var newRemoveButton = document.createElement('input');
@@ -62,8 +62,10 @@ function addPlusone() {
 
     var inputTextName = 'data[Rsvp]['+incrementalValue+'][Name]';
     var buttonName = 'data[Rsvp]['+incrementalValue+'button][Name]';
+    var currentInputText = document.getElementById('PlusoneName');
 
     newTextInput.setAttribute('id',inputTextName);
+    newTextInput.setAttribute('value',currentInputText.value);
 
     newRemoveButton.setAttribute('id',buttonName);
     newRemoveButton.setAttribute('type', 'button');
@@ -72,7 +74,9 @@ function addPlusone() {
 
     parentDiv.appendChild(newRemoveButton);
     parentDiv.appendChild(newTextInput);
+    currentInputText.value = '';
 }
+
 
 /**
  *  Function that clears the not attending checkbox when either of the ceremony or

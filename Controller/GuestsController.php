@@ -7,6 +7,15 @@ App::uses('AppController', 'Controller');
  */
 class GuestsController extends AppController {
 
+public function isAuthorized($user) {
+    // All registered users can add posts
+    if ($this->action === 'add') {
+        return true;
+    }
+
+    return parent::isAuthorized($user);
+}
+
 /**
  * index method
  *
