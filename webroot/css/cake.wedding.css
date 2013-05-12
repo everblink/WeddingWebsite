@@ -50,6 +50,13 @@ a img {
     padding: 24px 20px;
 }
 
+.image a img {
+    border:none;
+    padding: 24px 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
 h1, h2, h3, h4 {
     font-weight: normal;
     margin-bottom:0.5em;
@@ -84,6 +91,7 @@ p {
 .image_wrapper {
     position: absolute;
     top: 234px;
+    padding-top: 24px;
 }
 
 .image {
@@ -523,7 +531,7 @@ form .submit input[type=submit]:hover {
 }
 
 /* Homepage text*/
-.home_page_text, .gifts, .directions, .hotels, .menus, .menu_text, .hotels_text, .rsvp_text {
+.home_page_text, .gifts, .directions, .hotels, .menus, .menu_text, .hotels_text, .rsvp_text, .message_text, .request_song_text {
     text-align: center;
     padding-top: 35px;
     font-size: 16px;
