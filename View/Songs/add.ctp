@@ -4,7 +4,7 @@
 		<h2><?php echo __('REQUEST A SONG'); ?></h2><br/>
 	<?php
 		echo $this->Form->input('Artist', array('label' => 'ARTIST'));
-		echo $this->Form->input('Title', array('label' => 'TITLE'));
+		echo $this->Form->input('Title', array('label' => 'SONG'));
 		echo $this->Form->input('Guest_id', array('value' => $user, 'type' => 'hidden'));
 	?>
 	</div>

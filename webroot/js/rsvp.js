@@ -53,7 +53,7 @@ function clearNotAttending(){
  * */
 function addPlusone(incrementalValue) {
     if (incrementalValue > 5) {
-
+            alert("Sorry but you can't that many plus ones, we're not made out of money ;)");
         return;
     }
     var parentDiv = document.getElementById('plusone_input');
@@ -65,6 +65,7 @@ function addPlusone(incrementalValue) {
     var buttonName = 'data[Plusone]['+incrementalValue+'button][Name]';
     var currentInputText = document.getElementById('PlusoneName');
 
+    newTextInput.setAttribute('id',inputTextName);
     newTextInput.setAttribute('name',inputTextName);
     newTextInput.setAttribute('value',currentInputText.value);
 
@@ -83,7 +84,6 @@ function addPlusone(incrementalValue) {
     currentInputText.value = '';
 }
 
-
 /**
  *  Function that clears the not attending checkbox when either of the ceremony or
  *  the banquet checkbox is checked.
@@ -96,7 +96,6 @@ function removePlusone(button, inputText) {
 
     d.removeChild(oldButton);
     d.removeChild(oldInputText);
-
 }
 
 var value = 0;
