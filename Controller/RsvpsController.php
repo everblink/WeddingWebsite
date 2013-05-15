@@ -38,10 +38,20 @@ class RsvpsController extends AppController {
  * @return void
  */
 	public function add() {
-        if ($this->request->is('post')) {
+	    if ($this->request->is('post')) {
+            $errors = 0;
             $this->Rsvp->create();
-            $this->Rsvp->Guest->Plusone->create();
-            if ($this->Rsvp->save($this->request->data['Rsvp']) && $this->Rsvp->Guest->Plusone->save($this->request->data['Plusone'])) {
+
+            foreach($this->request->data['Plusone'] as $plusone) {
+                if ($plusone['Name'] != '') {
+                    $this->Rsvp->Guest->Plusone->create();
+                    if(!$this->Rsvp->Guest->Plusone->save($plusone)) {
+                        $errors++;
+                    }
+                }
+            }
+
+            if ($this->Rsvp->save($this->request->data['Rsvp']) && $errors == 0) {
                 $this->Session->setFlash(__('The rsvp has been saved'));
                 $this->redirect(array('action' => 'add'));
             } else {

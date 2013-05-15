@@ -1,4 +1,3 @@
-<?php echo $this->Html->script('../js/rsvp'); ?>
 <div class="rsvps form">
 <?php echo $this->Form->create('Rsvp'); ?>
     <div class="rsvp_text">
@@ -16,12 +15,14 @@
             ?>
             <br/>ADD EXTRA GUEST(S) (IF APPLICABLE)
             <div id="plusone_input">
-                <br/><input name="add_plusone_button" id="add_plusone_button" type="button" onclick="addPlusone();">
+                <br/><input name="add_plusone_button" id="add_plusone_button" type="button" />
                 <?php
-                    echo $this->Form->input('Plusone.Guest_id', array('value' => $user, 'type' => 'hidden'));
-                    echo $this->Form->input('Plusone.Name', array('label' => false, 'div' => false));
-                    echo $this->Form->input('incremental_value', array('value' => '0', 'type' => 'hidden'));
+
+                    //echo $this->Form->input('Plusone.Guest_id', array('value' => $user, 'type' => 'hidden'));
+                    //echo $this->Form->input('Plusone.Name', array('label' => false, 'div' => false));
                 ?>
+                <input name="data[Plusone][0][Guest_id]" type="hidden" id="PlusoneGuest_id" value=<?php echo $user; ?> />
+                <input name="data[Plusone][0][Name]" type="text" id="PlusoneName" />
 
             </div>
         </div>
@@ -41,3 +42,5 @@
              </div>";
     }
 ?>
+
+<?php echo $this->Html->script('../js/rsvp'); ?>

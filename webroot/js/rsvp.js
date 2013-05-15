@@ -51,20 +51,21 @@ function clearNotAttending(){
  *  Function that clears the not attending checkbox when either of the ceremony or
  *  the banquet checkbox is checked.
  * */
-function addPlusone() {
+function addPlusone(incrementalValue) {
+    if (incrementalValue > 5) {
+
+        return;
+    }
     var parentDiv = document.getElementById('plusone_input');
-    var numericalValue = document.getElementById('RsvpIncrementalValue');
-    var incrementalValue = (document.getElementById('RsvpIncrementalValue').value -2)+ 2;
 
     var newTextInput = document.createElement('input');
     var newRemoveButton = document.createElement('input');
-    numericalValue.value = incrementalValue;
 
-    var inputTextName = 'data[Rsvp]['+incrementalValue+'][Name]';
-    var buttonName = 'data[Rsvp]['+incrementalValue+'button][Name]';
+    var inputTextName = 'data[Plusone]['+incrementalValue+'][Name]';
+    var buttonName = 'data[Plusone]['+incrementalValue+'button][Name]';
     var currentInputText = document.getElementById('PlusoneName');
 
-    newTextInput.setAttribute('id',inputTextName);
+    newTextInput.setAttribute('name',inputTextName);
     newTextInput.setAttribute('value',currentInputText.value);
 
     newRemoveButton.setAttribute('id',buttonName);
@@ -72,6 +73,11 @@ function addPlusone() {
     newRemoveButton.setAttribute('onclick', 'removePlusone("'+buttonName+'","'+ inputTextName+'");');
     newRemoveButton.setAttribute('class', 'removeButton');
 
+    var hiddenGuestId = document.createElement('input');
+    hiddenGuestId.setAttribute('type','hidden');
+    hiddenGuestId.setAttribute('value', document.getElementById('PlusoneGuest_id').value);
+    hiddenGuestId.setAttribute('name','data[Plusone]['+ incrementalValue +'][Guest_id]');
+    parentDiv.appendChild(hiddenGuestId);
     parentDiv.appendChild(newRemoveButton);
     parentDiv.appendChild(newTextInput);
     currentInputText.value = '';
@@ -92,3 +98,17 @@ function removePlusone(button, inputText) {
     d.removeChild(oldInputText);
 
 }
+
+var value = 0;
+function bindEvent(element, type, handler) {
+    if(element.addEventListener) {
+        element.addEventListener(type, handler, false);
+    } else {
+        element.attachEvent('on'+type, handler);
+    }
+}
+
+bindEvent(document.getElementById('add_plusone_button'), 'click', function() {
+    value++;
+    addPlusone(value);
+});
