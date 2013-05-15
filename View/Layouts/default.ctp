@@ -80,8 +80,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                                     $this->Html->image('menu_where_when_default.png',
-                                                        array('title' => 'Where and When', 'alt' => 'Where and When'),
-                                                        array('onmouseover' => "Tip('Test');")
+                                                        array('title' => 'Where and When', 'alt' => 'Where and When', 'id' => 'when_where_link')
                                                     ),
                                                     array('controller' => 'pages', 'action' => 'home'),
                                                     array('escape' => false));
@@ -91,7 +90,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                                     $this->Html->image('menu_rsvp_default.png',
-                                                        array('title' => 'RSVP', 'alt' => 'RSVP')
+                                                        array('title' => 'RSVP', 'alt' => 'RSVP', 'id' => 'rsvp_link')
                                                     ),
                                                     array('controller' => 'rsvps', 'action' => 'add'),
                                                     array('escape' => false));
@@ -101,7 +100,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                                     $this->Html->image('menu_banquet_default.png',
-                                                        array('title' => 'Banquet Menu', 'alt' => 'Banquet Menu')
+                                                        array('title' => 'Banquet Menu', 'alt' => 'Banquet Menu', 'id' => 'banquet_menu_link')
                                                     ),
                                                     array('controller' => 'menus', 'action' => 'index'),
                                                     array('escape' => false));
@@ -111,7 +110,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                             $this->Html->image('menu_directions_default.png',
-                                                array('title' => 'Directions', 'alt' => 'Directions')
+                                                array('title' => 'Directions', 'alt' => 'Directions', 'id' => 'directions_link')
                                             ),
                                             array('controller' => 'directions', 'action' => 'index'),
                                             array('escape' => false));
@@ -121,7 +120,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                                     $this->Html->image('menu_hotels_default.png',
-                                                        array('title' => 'Hotels', 'alt' => 'Hotels')
+                                                        array('title' => 'Hotels', 'alt' => 'Hotels', 'id' => 'hotels_link')
                                                     ),
                                                     array('controller' => 'hotels', 'action' => 'index'),
                                                     array('escape' => false));
@@ -131,7 +130,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                                     $this->Html->image('menu_request_default.png',
-                                                        array('title' => 'Request A Song', 'alt' => 'Request A Song')
+                                                        array('title' => 'Request A Song', 'alt' => 'Request A Song', 'id' => 'request_song_link')
                                                     ),
                                                     array('controller' => 'songs', 'action' => 'add'),
                                                     array('escape' => false));
@@ -141,7 +140,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                                     $this->Html->image('menu_leavenote_default.png',
-                                                        array('title' => 'Leave Us A Note', 'alt' => 'Leave Us A Note')
+                                                        array('title' => 'Leave Us A Note', 'alt' => 'Leave Us A Note', 'id' => 'note_link')
                                                     ),
                                                     array('controller' => 'messages', 'action' => 'add'),
                                                     array('escape' => false));
@@ -151,7 +150,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             <?php
                                 echo $this->Html->link(
                                                     $this->Html->image('menu_gifts_default.png',
-                                                        array('title' => 'Gifts', 'alt' => 'Gifts', 'id' => 'gifts_style')
+                                                        array('title' => 'Gifts', 'alt' => 'Gifts', 'id' => 'gifts_style', 'id' => 'gifts_link')
                                                     ),
                                                     array('controller' => 'gifts', 'action' => 'index'),
                                                     array('escape' => false));
@@ -162,7 +161,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             echo "<div class=\"image\">".
                                 $this->Html->link(
                                             $this->Html->image('menu_logout_default.png',
-                                                    array('title' => 'Logout', 'alt' => 'Logout', 'id' => 'logout_style')
+                                                    array('title' => 'Logout', 'alt' => 'Logout', 'id' => 'logout_style', 'id' => 'logout_link')
                                                     ),
                                                     array('controller' => 'users', 'action' => 'logout'),
                                                     array('escape' => false));

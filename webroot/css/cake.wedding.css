@@ -105,15 +105,95 @@ p {
     transform:matrix(1, 0, 0, 1.1, 0, 0);
 }
 
-.image_background_request {
-    background-image: url('../img/menu_request_default.png');
+#when_where_link {
+    background     : transparent url('../img/menu_where_when_default.png');
+    z-index        : 1;
 }
-/*
-.image a:hover {
-    background-image: url('../img/menu_hover.png');
-    color: #367889;
-    text-decoration:none;
-}*/
+
+#when_where_link:hover {
+    background     : url('../img/menu_wherewhen_hover.png');
+    z-index        : 2;
+}
+
+#rsvp_link {
+    background     : transparent url('../img/menu_rsvp_default.png');
+    z-index        : 1;
+}
+
+#rsvp_link:hover {
+    background     : url('../img/menu_rsvp_hover.png');
+    z-index        : 2;
+}
+
+#banquet_menu_link {
+    background     : transparent url('../img/menu_banquet_default.png');
+    z-index        : 1;
+}
+
+#banquet_menu_link:hover {
+    background     : url('../img/menu_banquet_hover.png');
+    z-index        : 2;
+}
+
+#directions_link {
+    background     : transparent url('../img/menu_directions_default.png');
+    z-index        : 1;
+}
+
+#directions_link:hover {
+    background     : url('../img/menu_directions_hover.png');
+    z-index        : 2;
+}
+
+#hotels_link {
+    background     : transparent url('../img/menu_hotels_default.png');
+    z-index        : 1;
+}
+
+#hotels_link:hover {
+    background     : url('../img/menu_hotels_hover.png');
+    z-index        : 2;
+}
+
+#request_song_link {
+    background     : transparent url('../img/menu_request_default.png');
+    z-index        : 1;
+}
+
+#request_song_link:hover {
+    background     : url('../img/menu_request_hover.png');
+    z-index        : 2;
+}
+
+#note_link {
+    background     : transparent url('../img/menu_leavenote_default.png');
+    z-index        : 1;
+}
+
+#note_link:hover {
+    background     : url('../img/menu_leavenote_hover.png');
+    z-index        : 2;
+}
+
+#gifts_link {
+    background     : transparent url('../img/menu_gifts_default.png');
+    z-index        : 1;
+}
+
+#gifts_link:hover {
+    background     : url('../img/menu_gifts_hover.png');
+    z-index        : 2;
+}
+
+#logout_link {
+    background     : transparent url('../img/menu_logout_default.png');
+    z-index        : 1;
+}
+
+#logout_link:hover {
+    background     : url('../img/menu_logout_hover.png');
+    z-index        : 2;
+}
 
 .image h2 {
     font-size:0px;
@@ -243,7 +323,6 @@ p {
     -o-transform:matrix(1, 0, 0, 1, 145, 0);
     -ms-transform:matrix(1, 0, 0, 1, 145, 0);
     transform:matrix(1, 0, 0, 1, 145, 0);
-
 }
 
 #add_plusone_button {

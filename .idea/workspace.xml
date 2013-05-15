@@ -56,10 +56,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cake.wedding.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cake.wedding.css" pinned="true" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/css/cake.wedding.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="245" column="0" selection-start="5672" selection-end="5672" vertical-scroll-proportion="0.5029586">
+            <state line="107" column="16" selection-start="2221" selection-end="2236" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.ctp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="144" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.24367817">
               <folding />
             </state>
           </provider>
@@ -97,7 +106,6 @@
         <option value="$PROJECT_DIR$/Model/Guest.php" />
         <option value="$PROJECT_DIR$/Model/Plusone.php" />
         <option value="$PROJECT_DIR$/Controller/PlusonesController.php" />
-        <option value="$PROJECT_DIR$/View/Layouts/default.ctp" />
         <option value="$PROJECT_DIR$/View/Pages/home.ctp" />
         <option value="$PROJECT_DIR$/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/View/Messages/add.ctp" />
@@ -109,6 +117,7 @@
         <option value="$PROJECT_DIR$/View/Songs/add.ctp" />
         <option value="$PROJECT_DIR$/View/Gifts/index.ctp" />
         <option value="$PROJECT_DIR$/webroot/css/cake.wedding.css" />
+        <option value="$PROJECT_DIR$/View/Layouts/default.ctp" />
       </list>
     </option>
   </component>
@@ -278,6 +287,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Menus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -471,11 +498,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/View/Users/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/Helper/AppHelper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.6643678" />
@@ -501,30 +523,9 @@
         <state line="11" column="6" selection-start="384" selection-end="384" vertical-scroll-proportion="0.21494253" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/RsvpsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/GuestsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="30" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Rsvps/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="69" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/rsvp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="24" selection-start="1762" selection-end="1778" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -536,6 +537,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/View/Songs/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Rsvps/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="69" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="0" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.0">
@@ -543,9 +558,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/Songs/edit.ctp">
+    <entry file="file://$PROJECT_DIR$/webroot/js/rsvp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="54" column="24" selection-start="1762" selection-end="1778" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/RsvpsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -566,7 +588,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/cake.wedding.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="0" selection-start="5672" selection-end="5672" vertical-scroll-proportion="0.5029586">
+        <state line="107" column="16" selection-start="2221" selection-end="2236" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="144" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.24367817">
           <folding />
         </state>
       </provider>
