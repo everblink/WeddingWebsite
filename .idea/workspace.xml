@@ -32,16 +32,7 @@
       <file leaf-file-name="AppController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rsvp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webroot/js/rsvp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="24" selection-start="1762" selection-end="1778" vertical-scroll-proportion="0.0">
+            <state line="39" column="63" selection-start="1333" selection-end="1338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cake.wedding.css" pinned="true" current="true" current-in-tab="true">
+      <file leaf-file-name="cake.wedding.css" pinned="true" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/css/cake.wedding.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="47" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.745977">
+            <state line="99" column="16" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,16 +59,16 @@
       <file leaf-file-name="default.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="57" selection-start="11055" selection-end="11055" vertical-scroll-proportion="0.0">
+            <state line="195" column="50" selection-start="8953" selection-end="8953" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webroot/js/default.js">
+      <file leaf-file-name="PagesController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Controller/PagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+            <state line="67" column="9" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.7264368">
               <folding />
             </state>
           </provider>
@@ -133,9 +124,9 @@
         <option value="$PROJECT_DIR$/View/Songs/add.ctp" />
         <option value="$PROJECT_DIR$/View/Gifts/index.ctp" />
         <option value="$PROJECT_DIR$/webroot/index.php" />
-        <option value="$PROJECT_DIR$/View/Layouts/default.ctp" />
         <option value="$PROJECT_DIR$/webroot/js/default.js" />
         <option value="$PROJECT_DIR$/webroot/css/cake.wedding.css" />
+        <option value="$PROJECT_DIR$/View/Layouts/default.ctp" />
       </list>
     </option>
   </component>
@@ -516,11 +507,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/View/Users/login.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/Layouts/flash.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -590,28 +576,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="57" selection-start="11055" selection-end="11055" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+        <state line="39" column="63" selection-start="1333" selection-end="1338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/css/cake.wedding.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="47" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.745977">
+        <state line="99" column="16" selection-start="1986" selection-end="1986" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="195" column="50" selection-start="8953" selection-end="8953" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="9" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.7264368">
           <folding />
         </state>
       </provider>

@@ -98,11 +98,90 @@ p {
     position: relative;
     padding: 0px 0px 0px 0px;
     height:40px;
-    -webkit-transform:matrix(1, 0, 0, 1.1, 0, 1);
-    -moz-transform:matrix(1, 0, 0, 1.1, 0, 0);
-    -o-transform:matrix(1, 0, 0, 1.1, 0, 0);
-    -ms-transform:matrix(1, 0, 0, 1.1, 0, 0);
-    transform:matrix(1, 0, 0, 1.1, 0, 0);
+}
+
+a#when_where_link, a#rsvp_link, a#banquet_menu_link, a#directions_link,
+a#hotels_link, a#request_song_link, a#note_link, a#gifts_link, a#logout_link {
+    display: block;
+    width:240px ;
+    height:40px ;
+    -webkit-transform:matrix(1, 0, 0, 1, 20, 2);
+    -moz-transform:matrix(1, 0, 0, 1, 20, 2);
+    -o-transform:matrix(1, 0, 0, 1, 20, 2);
+    -ms-transform:matrix(1, 0, 0, 1, 20, 2);
+    transform:matrix(1, 0, 0, 1, 20, 2);
+}
+
+a#when_where_link {
+    background     : transparent url('../img/menu_where_when_default.png') no-repeat;
+}
+
+a#when_where_link:hover {
+    background     : url('../img/menu_wherewhen_hover.png') no-repeat;
+}
+
+a#rsvp_link {
+    background     : transparent url('../img/menu_rsvp_default.png') no-repeat;
+}
+
+a#rsvp_link:hover {
+    background     : url('../img/menu_rsvp_hover.png') no-repeat;
+}
+
+a#banquet_menu_link {
+    background     : transparent url('../img/menu_banquet_default.png') no-repeat;
+}
+
+a#banquet_menu_link:hover {
+    background     : url('../img/menu_banquet_hover.png') no-repeat;
+}
+
+a#directions_link {
+    background     : transparent url('../img/menu_directions_default.png') no-repeat;
+}
+
+a#directions_link:hover {
+    background     : url('../img/menu_directions_hover.png') no-repeat;
+}
+
+a#hotels_link {
+    background     : transparent url('../img/menu_hotels_default.png') no-repeat;
+}
+
+a#hotels_link:hover {
+    background     : url('../img/menu_hotels_hover.png') no-repeat;
+}
+
+a#request_song_link {
+    background     : transparent url('../img/menu_request_default.png') no-repeat;
+}
+
+a#request_song_link:hover {
+    background     : url('../img/menu_request_hover.png') no-repeat;
+}
+
+a#note_link {
+    background     : transparent url('../img/menu_leavenote_default.png') no-repeat;
+}
+
+a#note_link:hover {
+    background     : url('../img/menu_leavenote_hover.png') no-repeat;
+}
+
+a#gifts_link {
+    background     : transparent url('../img/menu_gifts_default.png') no-repeat;
+}
+
+a#gifts_link:hover {
+    background     : url('../img/menu_gifts_hover.png') no-repeat;
+}
+
+a#logout_link {
+    background     : transparent url('../img/menu_logout_default.png') no-repeat;
+}
+
+a#logout_link:hover {
+    background     : url('../img/menu_logout_hover.png') no-repeat;
 }
 
 .image h2 {

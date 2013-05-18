@@ -78,93 +78,66 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                 <div class="image_wrapper">
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                                    $this->Html->image('menu_where_when_default.png',
-                                                        array('title' => 'Where and When', 'alt' => 'Where and When', 'id' => 'when_where_link')
-                                                    ),
+                                echo $this->Html->link('',
                                                     array('controller' => 'pages', 'action' => 'home'),
-                                                    array('escape' => false));
+                                                    array('title' => 'Where and When', 'alt' => 'Where and When', 'id' => 'when_where_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                                    $this->Html->image('menu_rsvp_default.png',
-                                                        array('title' => 'RSVP', 'alt' => 'RSVP', 'id' => 'rsvp_link')
-                                                    ),
+                                echo $this->Html->link('',
                                                     array('controller' => 'rsvps', 'action' => 'add'),
-                                                    array('escape' => false));
+                                                    array('title' => 'RSVP', 'alt' => 'RSVP', 'id' => 'rsvp_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                                    $this->Html->image('menu_banquet_default.png',
-                                                        array('title' => 'Banquet Menu', 'alt' => 'Banquet Menu', 'id' => 'banquet_menu_link')
-                                                    ),
+                                echo $this->Html->link('',
                                                     array('controller' => 'menus', 'action' => 'index'),
-                                                    array('escape' => false));
+                                                    array('title' => 'Banquet Menu', 'alt' => 'Banquet Menu', 'id' => 'banquet_menu_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                            $this->Html->image('menu_directions_default.png',
-                                                array('title' => 'Directions', 'alt' => 'Directions', 'id' => 'directions_link')
-                                            ),
+                                echo $this->Html->link('',
                                             array('controller' => 'directions', 'action' => 'index'),
-                                            array('escape' => false));
+                                            array('title' => 'Directions', 'alt' => 'Directions', 'id' => 'directions_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                                    $this->Html->image('menu_hotels_default.png',
-                                                        array('title' => 'Hotels', 'alt' => 'Hotels', 'id' => 'hotels_link')
-                                                    ),
+                                echo $this->Html->link('',
                                                     array('controller' => 'hotels', 'action' => 'index'),
-                                                    array('escape' => false));
+                                                    array('title' => 'Hotels', 'alt' => 'Hotels', 'id' => 'hotels_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                                    $this->Html->image('menu_request_default.png',
-                                                        array('title' => 'Request A Song', 'alt' => 'Request A Song', 'id' => 'request_song_link')
-                                                    ),
+                                echo $this->Html->link('',
                                                     array('controller' => 'songs', 'action' => 'add'),
-                                                    array('escape' => false));
+                                                    array('title' => 'Request A Song', 'alt' => 'Request A Song', 'id' => 'request_song_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                                    $this->Html->image('menu_leavenote_default.png',
-                                                        array('title' => 'Leave Us A Note', 'alt' => 'Leave Us A Note', 'id' => 'note_link')
-                                                    ),
+                                echo $this->Html->link('',
                                                     array('controller' => 'messages', 'action' => 'add'),
-                                                    array('escape' => false));
+                                                    array('title' => 'Leave Us A Note', 'alt' => 'Leave Us A Note', 'id' => 'note_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
-                                echo $this->Html->link(
-                                                    $this->Html->image('menu_gifts_default.png',
-                                                        array('title' => 'Gifts', 'alt' => 'Gifts', 'id' => 'gifts_style', 'id' => 'gifts_link')
-                                                    ),
+                                echo $this->Html->link('',
                                                     array('controller' => 'gifts', 'action' => 'index'),
-                                                    array('escape' => false));
+                                                    array('title' => 'Gifts', 'alt' => 'Gifts', 'id' => 'gifts_style', 'id' => 'gifts_link'));
                             ?>
                     </div>
                     <?php
                         if ($this->Session->check('Auth.User') == true){
                             echo "<div class=\"image\">".
-                                $this->Html->link(
-                                            $this->Html->image('menu_logout_default.png',
-                                                    array('title' => 'Logout', 'alt' => 'Logout', 'id' => 'logout_style', 'id' => 'logout_link')
-                                                    ),
+                                $this->Html->link('',
                                                     array('controller' => 'users', 'action' => 'logout'),
-                                                    array('escape' => false));
+                                                    array('title' => 'Logout', 'alt' => 'Logout', 'id' => 'logout_style', 'id' => 'logout_link'));
                             echo "</div>";
                         }
                     ?>
@@ -221,7 +194,6 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
             </div>
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>
-			<?php echo $this->Html->script('default'); ?>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
