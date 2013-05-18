@@ -221,8 +221,10 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
             </div>
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->fetch('content'); ?>
+			<?php echo $this->Html->script('default'); ?>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+
 </body>
 </html>
