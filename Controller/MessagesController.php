@@ -7,6 +7,21 @@ App::uses('AppController', 'Controller');
  */
 class MessagesController extends AppController {
 
+public function beforeFilter(){
+    parent::beforeFilter();
+    if ($this->Auth->loggedIn()) {
+        $this->Auth->allow('add');
+    }
+}
+public function isAuthorized($user) {
+    if ($user['role'] == 'admin') {
+        return true;
+    }
+    if (in_array($this->action, array('edit', 'view')))  {
+        return false;
+    }
+}
+
 /**
  * index method
  *

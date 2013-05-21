@@ -756,7 +756,7 @@ p.error,
     border: 1px solid rgba(0, 0, 0, 0.5);
     background: #3B8230;
     background-repeat: repeat-x;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1BE050), to(#3B8230));
     background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
     background-image: -moz-linear-gradient(top, #76BF6B, #3B8230);
     background-image: -ms-linear-gradient(top, #76BF6B, #3B8230);
@@ -764,6 +764,16 @@ p.error,
     background-image: linear-gradient(top, #76BF6B, #3B8230);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
+
+.message {
+    background-image: -moz-linear-gradient(top, #1BE050, #1BE091);
+    background-image: -ms-linear-gradient(top, #1BE050, #1BE091);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ee5f5b), to(#c43c35));
+    background-image: -webkit-linear-gradient(top, #1BE050, #1BE091);
+    background-image: -o-linear-gradient(top, #1BE050, #1BE091);
+    background-image: linear-gradient(top, #1BE050, #1BE091);
+}
+
 p.error {
     font-family: Monaco, Consolas, Courier, monospace;
     font-size: 120%;
