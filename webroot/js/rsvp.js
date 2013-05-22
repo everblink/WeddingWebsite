@@ -82,6 +82,7 @@ function addPlusone(incrementalValue) {
 }
 
 var value = 1;
+
 /**
  *  Function that clears the not attending checkbox when either of the ceremony or
  *  the banquet checkbox is checked.
@@ -107,6 +108,32 @@ function bindEvent(element, type, handler) {
 bindEvent(document.getElementById('add_plusone_button'), 'click', function() {
     if (value < 5 )
         addPlusone(value++);
-    else
-        alert("Sorry but you can't that many plus ones, we're not made out of money ;)");
+    else {
+        $(function () {
+            $("#dialog-modal").dialog({
+                height:140,
+                width:300,
+                modal:true
+            });
+        });
+        $("#add_plusone_button").click(function () {
+            $("#dialog").dialog("open");
+        });
+    }
+});
+
+$("#RsvpAddForm").submit(function() {
+    if (($("#RsvpIsCeremony").is(':checked')) || ($("#RsvpIsBanquet").is(':checked')) || ($("#RsvpIsNotAttending").is(':checked')))
+        return true;
+    else {
+        $(function () {
+            $("#validate-modal").dialog({
+                height:120,
+                width:300,
+                modal:true
+            });
+        });
+        $("#dialog").dialog("open");
+        return false;
+    }
 });

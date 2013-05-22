@@ -357,8 +357,12 @@ a#logout_link.active {
     cursor: pointer;
 }
 
-#add_plusone_button:hover {
+#add_plusone_button {
     background-image: url('../img/add_form_field_default.png');
+}
+
+#add_plusone_button:hover {
+    background-image: url('../img/add_form_field_hover.png');
 }
 
 #plusone_input {
@@ -371,6 +375,34 @@ a#logout_link.active {
     background-image: url('../img/delete_form_field_default.png');
     cursor: pointer;
     margin-right: 5px;
+}
+
+.removeButton:hover {
+    background-image: url('../img/delete_form_field_hover.png');
+}
+
+#dialog-modal, #validate-modal {
+    display: none;
+}
+
+.ui-widget-header {
+    border: 1px solid #ADDBCD !important;
+    background: #C5F9EB !important
+    font-weight: normal !important;
+}
+
+.ui-dialog .ui-dialog-content,
+.ui-dialog .ui-dialog-title {
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif !important;
+    color: #3C4F46 !important;
+}
+
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: 0;
+    overflow: auto;
 }
 
 /** containers **/

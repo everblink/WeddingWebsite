@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-<?php echo $this->Form->end(__('SUBMIT')); ?>
+<?php echo $this->Form->end(__('SUBMIT'));?>
 </div>
 <?php
     if ($role == "admin")
@@ -42,5 +42,10 @@
              </div>";
     }
 ?>
-
+<div id="dialog-modal" title="FRIENDLY MESSAGE">
+  <p>SORRY BUT YOU CAN'T HAVE THAT MANY PLUS ONES, WE'RE NOT MADE OUT OF MONEY ;).</p>
+</div>
+<div id="validate-modal" title="FRIENDLY MESSAGE">
+  <p>YOU FORGOT TO SAY IF YOU ARE ATTENDING OR NOT :(.</p>
+</div>
 <?php echo $this->Html->script('../js/rsvp'); ?>
