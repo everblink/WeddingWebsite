@@ -49,6 +49,7 @@ class AppController extends Controller {
     }
 
     public function beforeFilter(){
+        $this->set('controller', $this->params['controller']);
         $this->set('logged_in', $this->Auth->loggedIn());
     }
 }

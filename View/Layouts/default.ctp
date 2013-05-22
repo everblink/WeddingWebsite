@@ -79,57 +79,65 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
-                                                    array('controller' => 'pages', 'action' => 'home'),
-                                                    array('title' => 'Where and When', 'alt' => 'Where and When', 'id' => 'when_where_link'));
+                                                    array(  'controller' => 'pages', 'action' => 'home'),
+                                                        array(  'class' => $controller == 'pages' ? 'active' : '',
+                                                                'title' => 'Where and When', 'alt' => 'Where and When', 'id' => 'when_where_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
                                                     array('controller' => 'rsvps', 'action' => 'add'),
-                                                    array('title' => 'RSVP', 'alt' => 'RSVP', 'id' => 'rsvp_link'));
+                                                        array(  'class' => $controller == 'rsvps' ? 'active' : '',
+                                                                'title' => 'RSVP', 'alt' => 'RSVP', 'id' => 'rsvp_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
                                                     array('controller' => 'menus', 'action' => 'index'),
-                                                    array('title' => 'Banquet Menu', 'alt' => 'Banquet Menu', 'id' => 'banquet_menu_link'));
+                                                        array(  'class' => $controller == 'menus' ? 'active' : '',
+                                                                'title' => 'Banquet Menu', 'alt' => 'Banquet Menu', 'id' => 'banquet_menu_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
                                             array('controller' => 'directions', 'action' => 'index'),
-                                            array('title' => 'Directions', 'alt' => 'Directions', 'id' => 'directions_link'));
+                                                array(  'class' => $controller == 'directions' ? 'active' : '',
+                                                        'title' => 'Directions', 'alt' => 'Directions', 'id' => 'directions_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
                                                     array('controller' => 'hotels', 'action' => 'index'),
-                                                    array('title' => 'Hotels', 'alt' => 'Hotels', 'id' => 'hotels_link'));
+                                                        array(  'class' => $controller == 'hotels' ? 'active' : '',
+                                                                'title' => 'Hotels', 'alt' => 'Hotels', 'id' => 'hotels_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
                                                     array('controller' => 'songs', 'action' => 'add'),
-                                                    array('title' => 'Request A Song', 'alt' => 'Request A Song', 'id' => 'request_song_link'));
+                                                        array(  'class' => $controller == 'songs' ? 'active' : '',
+                                                                'title' => 'Request A Song', 'alt' => 'Request A Song', 'id' => 'request_song_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
                                                     array('controller' => 'messages', 'action' => 'add'),
-                                                    array('title' => 'Leave Us A Note', 'alt' => 'Leave Us A Note', 'id' => 'note_link'));
+                                                        array(  'class' => $controller == 'messages' ? 'active' : '',
+                                                                'title' => 'Leave Us A Note', 'alt' => 'Leave Us A Note', 'id' => 'note_link'));
                             ?>
                     </div>
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
                                                     array('controller' => 'gifts', 'action' => 'index'),
-                                                    array('title' => 'Gifts', 'alt' => 'Gifts', 'id' => 'gifts_style', 'id' => 'gifts_link'));
+                                                        array(  'class' => $controller == 'gifts' ? 'active' : '',
+                                                                'title' => 'Gifts', 'alt' => 'Gifts', 'id' => 'gifts_style', 'id' => 'gifts_link'));
                             ?>
                     </div>
                     <?php
@@ -137,7 +145,8 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                             echo "<div class=\"image\">".
                                 $this->Html->link('',
                                                     array('controller' => 'users', 'action' => 'logout'),
-                                                    array('title' => 'Logout', 'alt' => 'Logout', 'id' => 'logout_style', 'id' => 'logout_link'));
+                                                        array(  'class' => $controller == 'users' ? 'active' : '',
+                                                                'title' => 'Logout', 'alt' => 'Logout', 'id' => 'logout_style', 'id' => 'logout_link'));
                             echo "</div>";
                         }
                     ?>

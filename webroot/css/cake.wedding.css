@@ -120,12 +120,20 @@ a#when_where_link:hover {
     background     : url('../img/menu_wherewhen_hover.png') no-repeat;
 }
 
+a#when_where_link.active {
+    background     : transparent url('../img/menu_wherewhen_active.png') no-repeat;
+}
+
 a#rsvp_link {
     background     : transparent url('../img/menu_rsvp_default.png') no-repeat;
 }
 
 a#rsvp_link:hover {
     background     : url('../img/menu_rsvp_hover.png') no-repeat;
+}
+
+a#rsvp_link.active {
+    background     : transparent url('../img/menu_rsvp_active.png') no-repeat;
 }
 
 a#banquet_menu_link {
@@ -136,12 +144,20 @@ a#banquet_menu_link:hover {
     background     : url('../img/menu_banquet_hover.png') no-repeat;
 }
 
-a#directions_link {
-    background     : transparent url('../img/menu_directions_default.png') no-repeat;
+a#banquet_menu_link.active {
+    background     : transparent url('../img/menu_banquet_active.png') no-repeat;
 }
+
+a#directions_link {
+     background     : transparent url('../img/menu_directions_default.png') no-repeat;
+ }
 
 a#directions_link:hover {
     background     : url('../img/menu_directions_hover.png') no-repeat;
+}
+
+a#directions_link.active {
+    background     : transparent url('../img/menu_directions_active.png') no-repeat;
 }
 
 a#hotels_link {
@@ -152,12 +168,20 @@ a#hotels_link:hover {
     background     : url('../img/menu_hotels_hover.png') no-repeat;
 }
 
+a#hotels_link.active {
+    background     : transparent url('../img/menu_hotels_active.png') no-repeat;
+}
+
 a#request_song_link {
     background     : transparent url('../img/menu_request_default.png') no-repeat;
 }
 
 a#request_song_link:hover {
     background     : url('../img/menu_request_hover.png') no-repeat;
+}
+
+a#request_song_link.active {
+    background     : transparent url('../img/menu_request_active.png') no-repeat;
 }
 
 a#note_link {
@@ -168,6 +192,10 @@ a#note_link:hover {
     background     : url('../img/menu_leavenote_hover.png') no-repeat;
 }
 
+a#note_link.active {
+    background     : transparent url('../img/menu_leavenote_active.png') no-repeat;
+}
+
 a#gifts_link {
     background     : transparent url('../img/menu_gifts_default.png') no-repeat;
 }
@@ -176,12 +204,20 @@ a#gifts_link:hover {
     background     : url('../img/menu_gifts_hover.png') no-repeat;
 }
 
+a#gifts_link.active {
+    background     : transparent url('../img/menu_gifts_active.png') no-repeat;
+}
+
 a#logout_link {
     background     : transparent url('../img/menu_logout_default.png') no-repeat;
 }
 
 a#logout_link:hover {
     background     : url('../img/menu_logout_hover.png') no-repeat;
+}
+
+a#logout_link.active {
+    background     : transparent url('../img/menu_logout_active.png') no-repeat;
 }
 
 .image h2 {

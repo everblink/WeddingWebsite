@@ -52,10 +52,7 @@ function clearNotAttending(){
  *  the banquet checkbox is checked.
  * */
 function addPlusone(incrementalValue) {
-    if (incrementalValue > 5) {
-            alert("Sorry but you can't that many plus ones, we're not made out of money ;)");
-        return;
-    }
+
     var parentDiv = document.getElementById('plusone_input');
 
     var newTextInput = document.createElement('input');
@@ -84,12 +81,13 @@ function addPlusone(incrementalValue) {
     currentInputText.value = '';
 }
 
+var value = 1;
 /**
  *  Function that clears the not attending checkbox when either of the ceremony or
  *  the banquet checkbox is checked.
  * */
 function removePlusone(button, inputText) {
-
+    value--;
     var d = document.getElementById('plusone_input');
     var oldButton = document.getElementById(button);
     var oldInputText = document.getElementById(inputText);
@@ -98,7 +96,6 @@ function removePlusone(button, inputText) {
     d.removeChild(oldInputText);
 }
 
-var value = 0;
 function bindEvent(element, type, handler) {
     if(element.addEventListener) {
         element.addEventListener(type, handler, false);
@@ -108,6 +105,8 @@ function bindEvent(element, type, handler) {
 }
 
 bindEvent(document.getElementById('add_plusone_button'), 'click', function() {
-    value++;
-    addPlusone(value);
+    if (value < 5 )
+        addPlusone(value++);
+    else
+        alert("Sorry but you can't that many plus ones, we're not made out of money ;)");
 });
