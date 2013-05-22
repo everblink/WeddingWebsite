@@ -10,7 +10,7 @@ class RsvpsController extends AppController {
 public function beforeFilter(){
     parent::beforeFilter();
     if ($this->Auth->loggedIn()) {
-        $this->Auth->allow('add');
+        $this->Auth->allow(array('add', 'view', 'edit'));
     }
 }
 
@@ -18,7 +18,7 @@ public function isAuthorized($user) {
     if ($user['role'] == 'admin') {
         return true;
     }
-    if (in_array($this->action, array('edit', 'delete', 'view')))  {
+    if (in_array($this->action, array('delete')))  {
         return false;
     }
 }
@@ -77,10 +77,8 @@ public function isAuthorized($user) {
 
         $guests = $this->Rsvp->Guest->find('list');
         $user = $this->Auth->user('guest_id');
-        $role = $this->Auth->user('role');
 
         $this->set('user', $user);
-        $this->set('role', $role);
         $this->set(compact('guests'));
     }
 

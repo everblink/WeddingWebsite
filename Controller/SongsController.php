@@ -65,10 +65,9 @@ public function isAuthorized($user) {
 		}
 		$guests = $this->Song->Guest->find('list');
 		$user = $this->Auth->user('guest_id');
-		$role = $this->Auth->user('role');
+
         $this->set('user', $user);
-        $this->set('role', $role);
-		$this->set(compact('guests'));
+        $this->set(compact('guests'));
 	}
 
 /**
