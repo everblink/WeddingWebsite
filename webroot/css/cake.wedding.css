@@ -350,6 +350,53 @@ a#logout_link.active {
     transform:matrix(1, 0, 0, 1, 145, 0);
 }
 
+#UserLoginForm .submit input[type=submit]{
+    background-image: url('../img/button_login_default.png');
+    background-repeat: no-repeat;
+    border: none;
+    color: #3C4F46;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+#UserLoginForm legend{
+    -webkit-transform:matrix(1, 0, 0, 1, 98, 0) !important;
+    -moz-transform:matrix(1, 0, 0, 1, 98, 0) !important;
+    -o-transform:matrix(1, 0, 0, 1, 200, 0) !important;
+    -ms-transform:matrix(1, 0, 0, 1, 98, 0) !important;
+    transform:matrix(1, 0, 0, 1, -25, 0) !important;
+}
+
+#RsvpAddForm .submit input[type=submit],
+#SongAddForm .submit input[type=submit],
+#MessageAddForm .submit input[type=submit]{
+    background-image: url('../img/button_submit_default.png');
+    background-repeat: no-repeat;
+    border: none;
+    color: #3C4F46;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+#RsvpAddForm .submit:hover input[type=submit],
+#SongAddForm .submit:hover input[type=submit],
+#MessageAddForm .submit:hover input[type=submit] {
+    background-image: url('../img/button_submit_hover.png');
+    color: #FFF;
+}
+#UserLoginForm .submit input[type=submit] {
+    -webkit-transform:matrix(1, 0, 0, 1, 205, 24);
+    -moz-transform:matrix(1, 0, 0, 1, 205, 24);
+    -o-transform:matrix(1, 0, 0, 1, 205, 24);
+    -ms-transform:matrix(1, 0, 0, 1, 205, 24);
+    transform:matrix(1, 0, 0, 1, 205, 24);
+}
+
+#UserLoginForm .submit:hover input[type=submit] {
+    background-image: url('../img/button_login_hover.png');
+    color: #FFF;
+}
+
 #add_plusone_button {
     width: 40px;
     height: 40px;
@@ -552,6 +599,11 @@ fieldset {
     margin-bottom: 1em;
     padding: 16px 10px;
     font-size: 15px;
+    -webkit-transform:matrix(1, 0, 0, 1, 0, 32);
+    -moz-transform:matrix(1, 0, 0, 1, 0, 32);
+    -o-transform:matrix(1, 0, 0, 1, 0, 32);
+    -ms-transform:matrix(1, 0, 0, 1, 0, 32);
+    transform:matrix(1, 0, 0, 1, 0, 32);
 }
 fieldset h2 {
     color: #3C4F46;
@@ -590,12 +642,22 @@ form div.submit {
     border: 0;
     clear: both;
     margin-top: 10px;
+    width: 100px;
 }
 label {
     display: block;
     font-size: 110%;
     margin-bottom:3px;
 }
+
+#RsvpAddForm input[type=text] {
+    -webkit-transform:matrix(1, 0, 0, 1, 10, 0);
+    -moz-transform:matrix(1, 0, 0, 1, 10, 0);
+    -o-transform:matrix(1, 0, 0, 1, 10, 0);
+    -ms-transform:matrix(1, 0, 0, 1, 10, 0);
+    transform:matrix(1, 0, 0, 1, 10, 0);
+}
+
 input, textarea {
     clear: both;
     font-size: 18px;
@@ -645,6 +707,7 @@ input[type="checkbox"] + label span {
     vertical-align:middle;
     background:url('../img/form_tickbox.png') no-repeat;
     cursor:pointer;
+    padding-right: 10px;
 }
 
 input[type="checkbox"]:checked + label span {
@@ -713,11 +776,11 @@ form .submit input[type=submit]:hover {
     display: block !important;
     text-align: right !important;
     float: left;
-    -webkit-transform:matrix(1, 0, 0, 1, 98, 7);
-    -moz-transform:matrix(1, 0, 0, 1, 98, 7);
-    -o-transform:matrix(1, 0, 0, 1, 98, 7);
-    -ms-transform:matrix(1, 0, 0, 1, 98, 7);
-    transform:matrix(1, 0, 0, 1, 98, 7);
+    -webkit-transform:matrix(1, 0, 0, 1, 98, 10);
+    -moz-transform:matrix(1, 0, 0, 1, 98, 10);
+    -o-transform:matrix(1, 0, 0, 1, 98, 10);
+    -ms-transform:matrix(1, 0, 0, 1, 98, 10);
+    transform:matrix(1, 0, 0, 1, 98, 10);
     font-weight: normal;
     content: none;
 
@@ -731,8 +794,6 @@ form .submit input[type=submit]:hover {
 .request_song_text div.input[type=text] {
     float: left;
 }
-
-
 
 /* Form errors */
 form .error {

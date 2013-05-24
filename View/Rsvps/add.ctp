@@ -13,21 +13,21 @@
                 echo $this->Form->input('Rsvp.IsBanquet', array('label' => '<span></span>I WILL BE ATTENDING THE BANQUET', 'onclick' => 'clearNotAttending()'));
                 echo $this->Form->input('Rsvp.IsNotAttending', array('label' => '<span></span>SORRY I/WE CAN\'T MAKE IT', 'onclick' => 'notAttending()'));
             ?>
-            <br/>ADD EXTRA GUEST(S) (IF APPLICABLE)
+            <br/><br/>ADD EXTRA GUEST(S) (IF APPLICABLE)
             <div id="plusone_input">
-                <br/><input name="add_plusone_button" id="add_plusone_button" type="button" />
+                <br/><input name="add_plusone_button" id="add_plusone_button" type="button" title="Add" />
                 <?php
 
                     //echo $this->Form->input('Plusone.Guest_id', array('value' => $user, 'type' => 'hidden'));
                     //echo $this->Form->input('Plusone.Name', array('label' => false, 'div' => false));
                 ?>
                 <input name="data[Plusone][0][Guest_id]" type="hidden" id="PlusoneGuest_id" value=<?php echo $user; ?> />
-                <input name="data[Plusone][0][Name]" type="text" id="PlusoneName" />
+                <input name="data[Plusone][0][Name]" type="text" id="PlusoneName" placeholder="Please enter one guest at a time" title="Enter a name and then click on the '+' button if you have more than one guest to add"/>
 
             </div>
         </div>
     </div>
-<?php echo $this->Form->end(__('SUBMIT'));?>
+<?php echo $this->Form->end((''));?>
 </div>
 <?php
     if ($role == "admin")

@@ -1,11 +1,11 @@
 <div class="users form">
 <?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User'); ?>
-    <fieldset>
-        <legend><?php echo __('Please enter your username and password'); ?></legend>
+    <div class="request_song_text">
+        <legend><?php echo __('PLEASE ENTER YOUR USERNAME AND PASSWORD'); ?></legend><br/>
         <?php echo $this->Form->input('username', array('label' => 'USERNAME'));
         echo $this->Form->input('password', array('label' => 'PASSWORD'));
     ?>
-    </fieldset>
-<?php echo $this->Form->end(__('LOGIN')); ?>
+    </div>
+<?php echo $this->Form->end(('')); ?>
 </div>

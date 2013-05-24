@@ -63,6 +63,7 @@ function addPlusone(incrementalValue) {
     var currentInputText = document.getElementById('PlusoneName');
 
     newTextInput.setAttribute('id',inputTextName);
+    newTextInput.setAttribute('type','text');
     newTextInput.setAttribute('name',inputTextName);
     newTextInput.setAttribute('value',currentInputText.value);
 

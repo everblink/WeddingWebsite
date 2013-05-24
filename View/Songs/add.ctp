@@ -8,7 +8,7 @@
 		echo $this->Form->input('Guest_id', array('value' => $user, 'type' => 'hidden'));
 	?>
 	</div>
-<?php echo $this->Form->end(__('SUBMIT')); ?>
+<?php echo $this->Form->end(('')); ?>
 </div>
 <?php
     if ($role == "admin")
