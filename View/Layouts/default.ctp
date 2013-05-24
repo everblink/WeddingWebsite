@@ -32,7 +32,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 
 		echo $this->Html->css('cake.wedding');
         echo $this->Html->css('jbclock');
-        echo $this->Html->css('jquery-ui-1.10.3.custom.min');
+        echo $this->Html->css('jquery-ui-1.10.3.custom');
 
         echo $this->Html->script('jquery-1.8.0.min');
         echo $this->Html->script('jquery-ui-1.10.3.custom.min');

@@ -431,58 +431,7 @@ a#logout_link.active {
 #dialog-modal, #validate-modal {
     display: none;
 }
-
-.ui-widget-header {
-    border: 1px solid #ADDBCD !important;
-    background: #C5F9EB !important;
-    font-weight: normal !important;
-}
-
-.ui-dialog .ui-dialog-content,
-.ui-dialog .ui-dialog-title {
-    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif !important;
-    color: #3C4F46 !important;
-}
-
-.ui-dialog .ui-dialog-content {
-    position: relative;
-    border: 0;
-    padding: .5em 1em;
-    background: 0;
-    overflow: auto;
-}
-
-.ui-state-default .ui-icon {
-    background-image: url('../img/button_modal_close_default.png') !important;
-}
-
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-    border: none !important;
-    font-weight: bold !important;
-    background-image: url('../img/button_modal_close_default.png') !important;
-}
-
-.ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close ui-state-hover{
-    background-image: url('../img/button_modal_close_hover.png') !important;
-}
-
-
-.ui-state-hover,
-.ui-widget-content .ui-state-hover,
-.ui-widget-header .ui-state-hover,
-.ui-state-focus,
-.ui-widget-content .ui-state-focus,
-.ui-widget-header .ui-state-focus:hover {
-    border: none !important;
-    color: none !important;
-}
-
-.ui-dialog .ui-dialog-titlebar-close {
-    height: 22px !important;
-    width: 22px !important;
-    padding: 0px !important;
-}
-
+*/
 /** containers **/
 div.actions {
     float:left;

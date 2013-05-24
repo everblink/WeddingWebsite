@@ -465,6 +465,11 @@ button.ui-button::-moz-focus-inner {
 	border-right-width: 0;
 	border-left-width: 1px;
 }
+.ui-dialog .ui-dialog-content,
+.ui-dialog .ui-dialog-title {
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif !important;
+    color: #3C4F46 !important;
+}
 .ui-dialog {
 	position: absolute;
 	top: 0;
@@ -808,8 +813,7 @@ body .ui-tooltip {
 	color: #333333;
 }
 .ui-widget-header {
-	border: 1px solid #e78f08;
-	background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+	border: 1px solid #ADDBCD;
 	color: #ffffff;
 	font-weight: bold;
 }
@@ -822,10 +826,12 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #cccccc;
-	background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+	border: none;
+	background: #f6f6f6 url('../img/button_modal_close_default.png');
 	font-weight: bold;
 	color: #1c94c4;
+    width: 20px;
+    height: 20px;
 }
 .ui-state-default a,
 .ui-state-default a:link,
@@ -839,10 +845,10 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid #fbcb09;
-	background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
-	font-weight: bold;
-	color: #c77405;
+	border: none;
+	background: transparent url(../img/button_modal_close_hover.png);
+    width: 20px;
+    height: 20px;
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -934,13 +940,14 @@ body .ui-tooltip {
 }
 .ui-widget-header .ui-icon {
 	background-image: url(images/ui-icons_ffffff_256x240.png);
+
 }
 .ui-state-default .ui-icon {
-	background-image: url(images/ui-icons_ef8c08_256x240.png);
+	background-image: url(../img/button_modal_close_default.png);
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url(images/ui-icons_ef8c08_256x240.png);
+	background-image: url('../img/button_modal_close_default.png');
 }
 .ui-state-active .ui-icon {
 	background-image: url(images/ui-icons_ef8c08_256x240.png);
