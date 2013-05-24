@@ -71,6 +71,7 @@ function addPlusone(incrementalValue) {
     newRemoveButton.setAttribute('type', 'button');
     newRemoveButton.setAttribute('onclick', 'removePlusone("'+buttonName+'","'+ inputTextName+'");');
     newRemoveButton.setAttribute('class', 'removeButton');
+    newRemoveButton.setAttribute('title', 'Delete');
 
     var hiddenGuestId = document.createElement('input');
     hiddenGuestId.setAttribute('type','hidden');
