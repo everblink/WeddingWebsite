@@ -120,6 +120,8 @@ bindEvent(document.getElementById('add_plusone_button'), 'click', function() {
         });
         $("#add_plusone_button").click(function () {
             $("#dialog").dialog("open");
+            $("button").removeClass("ui-state-focus ui-state-hover");
+
         });
     }
 });
@@ -136,6 +138,7 @@ $("#RsvpAddForm").submit(function() {
             });
         });
         $("#dialog").dialog("open");
+        $("button").removeClass("ui-state-focus ui-state-hover ui-state-active");
         return false;
     }
 });

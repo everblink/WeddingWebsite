@@ -431,7 +431,7 @@ a#logout_link.active {
 #dialog-modal, #validate-modal {
     display: none;
 }
-*/
+
 /** containers **/
 div.actions {
     float:left;
