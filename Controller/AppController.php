@@ -52,5 +52,13 @@ class AppController extends Controller {
         $this->set('controller', $this->params['controller']);
         $this->set('logged_in', $this->Auth->loggedIn());
         $this->set('role', $role = $this->Auth->user('role'));
+        $this->set('guest_id', $guest_id = $this->Auth->user('guest_id'));
+        $this->loadModel("Rsvp");
+        $this->set('rsvp_done', $rsvp_done = $this->Rsvp->find('first',
+                            array('conditions' =>
+                                array('Rsvp.Guest_id' => $guest_id))));
+        $this->set('rsvp_id', $rsvp_id = $this->Rsvp->find('list',
+                            array('conditions' =>
+                                array('Rsvp.Guest_id' => $guest_id)), array('Rsvp.id')));
     }
 }

@@ -28,6 +28,8 @@
 		<dd>
 			<?php   if (($rsvp['Rsvp']['IsNotAttending']) == 1)
                         echo 'SORRY AFRAID NOT';
+                    else
+                        echo 'I\'M DEFINITELY COMING';
 			?>
 			&nbsp;
 		</dd>
