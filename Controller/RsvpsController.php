@@ -104,8 +104,12 @@ public function isAuthorized($user) {
 			$options = array('conditions' => array('Rsvp.' . $this->Rsvp->primaryKey => $id));
 			$this->request->data = $this->Rsvp->find('first', $options);
 		}
+
 		$guests = $this->Rsvp->Guest->find('list');
-		$this->set(compact('guests'));
+        $user = $this->Auth->user('guest_id');
+
+        $this->set('user', $user);
+        $this->set(compact('guests'));
 	}
 
 /**

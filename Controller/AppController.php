@@ -52,6 +52,8 @@ class AppController extends Controller {
         $this->set('logged_in', $this->Auth->loggedIn());
         $this->set('role', $role = $this->Auth->user('role'));
         $this->set('guest_id', $guest_id = $this->Auth->user('guest_id'));
+
+        //load up data to determine whether or not the user has rsvpd or not
         $this->loadModel("Rsvp");
         $this->set('rsvp_done', $rsvp_done = $this->Rsvp->find('first',
                             array('conditions' =>
@@ -60,5 +62,14 @@ class AppController extends Controller {
             $this->set('rsvp_id', $rsvp_id = $rsvp_done['Rsvp']['Id']);
         else
             $this->set('rsvp_id', $rsvp_id = '0');
+
+        // load up data to display the plusones on the RSVP view page
+        $this->loadModel("Plusone");
+        $this->set('rsvp_plusones', $rsvp_plusones = $this->Plusone->find('list',
+                            array('conditions' =>
+                                    array('Plusone.Guest_id' => $guest_id)),
+                            array('fields' => ('Plusone.Name'))
+                        )
+                  );
     }
 }

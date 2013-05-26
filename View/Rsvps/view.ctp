@@ -1,40 +1,25 @@
-<div class="rsvps view">
-<h2><?php  echo ('YOU HAVE CURRENTLY RSVP\'D'); ?></h2>
-	<dl>
-		<dt><?php echo __('Guest'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($rsvp['Guest']['FirstName'], array('controller' => 'guests', 'action' => 'view', $rsvp['Guest']['Id'])); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo ('ARE YOU ATTENDING THE CEREMONY?'); ?></dt>
-		<dd>
-			<?php   if (($rsvp['Rsvp']['IsCeremony']) == 1)
-			            echo 'YES';
-                    else
-					    echo 'NO';
-            ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo ('ARE YOU ATTENDING THE RECEPTION/BANQUET?'); ?></dt>
-		<dd>
-			<?php   if (($rsvp['Rsvp']['IsBanquet']) == 1)
-			            echo 'YES';
-			        else
-			            echo 'NO';
-			?>
-			&nbsp;
-		</dd>
-		<dt><?php echo ('ARE YOU NOT COMING AT ALL?'); ?></dt>
-		<dd>
-			<?php   if (($rsvp['Rsvp']['IsNotAttending']) == 1)
-                        echo 'SORRY AFRAID NOT';
-                    else
-                        echo 'I\'M DEFINITELY COMING';
-			?>
-			&nbsp;
-		</dd>
-	    <?php echo $this->Html->link(__('Edit Rsvp'), array('action' => 'edit', $rsvp['Rsvp']['Id'])); ?>
-	</dl>
+<div class="rsvps_view">
+<h2><?php  echo ('YOU HAVE RSVP\'D'); ?></h2>
+	<div class="rsvp_view_text">
+	    <?php if (($rsvp['Rsvp']['IsCeremony']) == 1 && ($rsvp['Rsvp']['IsBanquet']) == 1)
+	        echo 'YOU ARE ATTENDING THE CEREMONY AND BANQUET <br/>'; ?>
+	    <?php if (($rsvp['Rsvp']['IsCeremony']) == 1 && ($rsvp['Rsvp']['IsBanquet']) == 0)
+        	echo 'YOU ARE ATTENDING THE CEREMONY <br/>'; ?>
+        <?php if (($rsvp['Rsvp']['IsCeremony']) == 0 && ($rsvp['Rsvp']['IsBanquet']) == 1)
+        	echo 'YOU ARE ATTENDING THE BANQUET <br/>'; ?>
+		<?php if (($rsvp['Rsvp']['IsNotAttending']) == 1)
+            echo 'YOU ARE NOT ATTENDING THE WEDDING <br/>'; ?>
+        <?php if (($rsvp['Rsvp']['IsNotAttending']) == 1)
+            echo 'YOU ARE NOT ATTENDING THE WEDDING :( <br/>';?>
+        <br/><?php echo  $this->Html->image('text_divider.png')?><br/><br/>
+        YOU'LL BE ACCOMPANIED BY THE FOLLOWING:<br/><br/>
+        <?php foreach ($rsvp_plusones as $rsvp_plusone): ?>
+            <?php echo $rsvp_plusone; ?><br/>
+        <?php endforeach; ?>
+        <br/><br/><br/>
+	    <?php echo $this->Html->link('',array('action' => 'edit', $rsvp['Rsvp']['Id']), array('id' => 'rsvp_plusone_edit'));
+        ?>
+	</div>
 </div>
 <?php
     if ($role == "admin")

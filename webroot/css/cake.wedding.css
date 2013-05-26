@@ -342,7 +342,8 @@ a#logout_link.active {
     transform:matrix(1, 0, 0, 1, 205, 0);
 }
 
-#RsvpAddForm div.submit {
+#RsvpAddForm div.submit,
+#RsvpEditForm div.submit {
     -webkit-transform:matrix(1, 0, 0, 1, 145, 0);
     -moz-transform:matrix(1, 0, 0, 1, 145, 0);
     -o-transform:matrix(1, 0, 0, 1, 145, 0);
@@ -368,6 +369,7 @@ a#logout_link.active {
 }
 
 #RsvpAddForm .submit input[type=submit],
+#RsvpEditForm .submit input[type=submit],
 #SongAddForm .submit input[type=submit],
 #MessageAddForm .submit input[type=submit]{
     background-image: url('../img/button_submit_default.png');
@@ -379,6 +381,7 @@ a#logout_link.active {
 }
 
 #RsvpAddForm .submit:hover input[type=submit],
+#RsvpEditForm .submit:hover input[type=submit],
 #SongAddForm .submit:hover input[type=submit],
 #MessageAddForm .submit:hover input[type=submit] {
     background-image: url('../img/button_submit_hover.png');
@@ -430,6 +433,23 @@ a#logout_link.active {
 
 #dialog-modal, #validate-modal {
     display: none;
+}
+
+a#rsvp_plusone_edit {
+    background-image: url('../img/button_edit_default.png');
+    height: 40px;
+    width: 100px;
+    display: block;
+    -webkit-transform:matrix(1, 0, 0, 1, 312, 0);
+    -moz-transform:matrix(1, 0, 0, 1, 312, 0);
+    -o-transform:matrix(1, 0, 0, 1, 312, 0);
+    -ms-transform:matrix(1, 0, 0, 1, 312, 0);
+    transform:matrix(1, 0, 0, 1, 312, 0);
+
+}
+
+a#rsvp_plusone_edit:hover {
+    background-image: url('../img/button_edit_hover.png');
 }
 
 /** containers **/
@@ -547,23 +567,24 @@ table td.actions a {
 dl {
     line-height: 2em;
     margin: 0em 0em;
-    width: 60%;
 }
 dl dd:nth-child(4n+2),
 dl dt:nth-child(4n+1) {
-    background: #f4f4f4;
+    background: none;
 }
 
 dt {
     font-weight: bold;
     padding-left: 4px;
     vertical-align: top;
-    width: 10em;
+    width: 400px;
+    text-align: left;
 }
 dd {
-    margin-left: 10em;
+    margin-left: 25em;
     margin-top: -2em;
     vertical-align: top;
+    width: 150px;
 }
 
 /** Forms **/
@@ -723,7 +744,7 @@ input[type=submit] {
     background: #C5F9EB;
 }
 form .submit input[type=submit] {
-    background-image:  url('../img/button_default.png');
+    background-image:  url('../img/button_submit_default.png');
     background-repeat: no-repeat;
     border: none;
     color: #3C4F46;
@@ -735,7 +756,18 @@ form .submit input[type=submit]:hover {
 }
 
 /* Homepage text*/
-.home_page_text, .gifts, .directions, .hotels, .menus, .menu_text, .hotels_text, .rsvp_text, .message_text, .request_song_text {
+.home_page_text,
+.gifts,
+.directions,
+.hotels,
+.menus,
+.menu_text,
+.hotels_text,
+.rsvp_text,
+.message_text,
+.request_song_text,
+.rsvp_view_text,
+.rsvps_view {
     text-align: center;
     padding-top: 35px;
     font-size: 16px;
