@@ -89,7 +89,7 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
                     <div class="image">
                             <?php
                                 echo $this->Html->link('',
-                                                    array('controller' => 'rsvps', 'action' => $rsvp_done != true ? 'add' : 'view'),
+                                                    array('controller' => 'rsvps', 'action' => $rsvp_done != true ? 'add' : 'view/'.$rsvp_id),
                                                         array(  'class' => $controller == 'rsvps' ? 'active' : '',
                                                                 'title' => 'RSVP', 'alt' => 'RSVP', 'id' => 'rsvp_link'));
                             ?>
@@ -206,8 +206,6 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 			<?php echo $this->Session->flash(); ?>
 			<?php echo $this->Session->flash('auth'); ?>
 			<?php echo $this->fetch('content'); ?>
-			<?php debug($rsvp_done); ?>
-			<?php debug($rsvp_id);?>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>

@@ -40,7 +40,6 @@ class AppController extends Controller {
                 'loginRedirect' => array('controller' => 'pages', 'action' => 'index'),
                 'logoutRedirect' => array('controller' => 'pages', 'action' => 'index'),
                 'authorize' => array('Controller')
-
             )
     );
 
@@ -57,8 +56,9 @@ class AppController extends Controller {
         $this->set('rsvp_done', $rsvp_done = $this->Rsvp->find('first',
                             array('conditions' =>
                                 array('Rsvp.Guest_id' => $guest_id))));
-        $this->set('rsvp_id', $rsvp_id = $this->Rsvp->find('list',
-                            array('conditions' =>
-                                array('Rsvp.Guest_id' => $guest_id)), array('Rsvp.id')));
+        if ($rsvp_done == true)
+            $this->set('rsvp_id', $rsvp_id = $rsvp_done['Rsvp']['Id']);
+        else
+            $this->set('rsvp_id', $rsvp_id = '0');
     }
 }
