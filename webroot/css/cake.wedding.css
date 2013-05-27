@@ -405,10 +405,7 @@ a#logout_link.active {
     height: 40px;
     background-image: url('../img/add_form_field_default.png');
     cursor: pointer;
-}
-
-#add_plusone_button {
-    background-image: url('../img/add_form_field_default.png');
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 #add_plusone_button:hover {
@@ -651,12 +648,13 @@ label {
     margin-bottom:3px;
 }
 
-#RsvpAddForm input[type=text] {
-    -webkit-transform:matrix(1, 0, 0, 1, 10, 0);
-    -moz-transform:matrix(1, 0, 0, 1, 10, 0);
-    -o-transform:matrix(1, 0, 0, 1, 10, 0);
-    -ms-transform:matrix(1, 0, 0, 1, 10, 0);
-    transform:matrix(1, 0, 0, 1, 10, 0);
+#RsvpAddForm input[type=text]
+#RsvpEditForm input[type=text]{
+    -webkit-transform:matrix(1, 0, 0, 1, 10, -4);
+    -moz-transform:matrix(1, 0, 0, 1, 10, -4);
+    -o-transform:matrix(1, 0, 0, 1, 10, -4);
+    -ms-transform:matrix(1, 0, 0, 1, 10, -5);
+    transform:matrix(1, 0, 0, 1, 10, -5);
 }
 
 input, textarea {
