@@ -17,7 +17,7 @@
             <div id="plusone_input">
                 <br/><input name="add_plusone_button" id="add_plusone_button" type="button" title="Add" />
                 <input name="data[Plusone][0][Guest_id]" type="hidden" id="PlusoneGuest_id" value=<?php echo $user; ?> />
-                <input name="data[Plusone][0][Name]" type="text" id="PlusoneName" placeholder="Please enter one guest at a time" title="Enter a name and then click on the '+' button if you have more than one guest to add"/>
+                <input name="data[Plusone][0][Name]" class="PlusoneName" type="text" id="PlusoneName" placeholder="Please enter one guest at a time" title="Enter a name and then click on the '+' button if you have more than one guest to add"/>
 
             </div>
         </div>

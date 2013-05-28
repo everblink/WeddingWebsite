@@ -387,6 +387,23 @@ a#logout_link.active {
     background-image: url('../img/button_submit_hover.png');
     color: #FFF;
 }
+
+#RsvpAddForm input[type=text]#PlusoneName {
+    -webkit-transform:matrix(1, 0, 0, 1, 10, 0);
+    -moz-transform:matrix(1, 0, 0, 1, 10, 2);
+    -o-transform:matrix(1, 0, 0, 1, 10, 0);
+    -ms-transform:matrix(1, 0, 0, 1, 10, 0);
+    transform:matrix(1, 0, 0, 1, 10, 0);
+}
+
+#RsvpAddForm input[type=text]{
+    -webkit-transform:matrix(1, 0, 0, 1, 10, -3.5);
+    -moz-transform:matrix(1, 0, 0, 1, 10, 1);
+    -o-transform:matrix(1, 0, 0, 1, 10, 1);
+    -ms-transform:matrix(1, 0, 0, 1, 10, 1);
+    transform:matrix(1, 0, 0, 1, 10, -2);
+}
+
 #UserLoginForm .submit input[type=submit] {
     -webkit-transform:matrix(1, 0, 0, 1, 205, 24);
     -moz-transform:matrix(1, 0, 0, 1, 205, 24);
@@ -422,6 +439,12 @@ a#logout_link.active {
     background-image: url('../img/delete_form_field_default.png');
     cursor: pointer;
     margin-right: 5px;
+    -webkit-transform:matrix(1, 0, 0, 1, 0, 1);
+    -moz-transform:matrix(1, 0, 0, 1, 0, 1);
+    -o-transform:matrix(1, 0, 0, 1, 0, 1);
+    -ms-transform:matrix(1, 0, 0, 1, 0, 1);
+    transform:matrix(1, 0, 0, 1, 0, 1);
+
 }
 
 .removeButton:hover {
@@ -665,7 +688,7 @@ input, textarea {
     background-color: transparent;
     padding: 10px;
     width: 320px;
-    height: 20px;
+    /*height: 20px;*/
     border: none;
 
 }
