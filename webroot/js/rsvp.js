@@ -28,7 +28,6 @@ function notAttending(){
         if (isCeremony.checked || isBanquet.checked){
             isCeremony.checked = false;
             isBanquet.checked = false;
-
         }
     }
 }
@@ -52,7 +51,6 @@ function clearNotAttending(){
  *  the banquet checkbox is checked.
  * */
 function addPlusone(incrementalValue) {
-
     var parentDiv = document.getElementById('plusone_input');
 
     var newTextInput = document.createElement('input');

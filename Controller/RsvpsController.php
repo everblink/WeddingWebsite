@@ -95,18 +95,9 @@ public function isAuthorized($user) {
 		}
 
 		if ($this->request->is('post') || $this->request->is('put')) {
-		    foreach($this->request->data['Plusone'] as $plusone) {
-                if ($plusone['Name'] != '') {
-                    debug($this->request->data['Plusone']);
-                    $this->Rsvp->Guest->Plusone->create();
-                    if(!$this->Rsvp->Guest->Plusone->save($plusone)) {
-                        $errors++;
-                    }
-                }
-            }
-			if ($this->Rsvp->save($this->request->data)) {
+		    if ($this->Rsvp->save($this->request->data)) {
 				$this->Session->setFlash(__('The rsvp has been saved'));
-				$this->redirect(array('action' => 'index'));
+				$this->redirect(array('action' => 'view/'.$id));
 			} else {
 				$this->Session->setFlash(__('The rsvp could not be saved. Please, try again.'));
 			}

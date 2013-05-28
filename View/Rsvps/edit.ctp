@@ -7,22 +7,12 @@
 		<div class="rsvp_checkboxes">
             <?php
                 echo $this->Form->create('Rsvp', array('action' => 'edit'));
-
                 echo $this->Form->input('Rsvp.Guest_id', array('value' => $user, 'type' => 'hidden'));
+                echo $this->Form->input('Rsvp.Id', array('value' => $rsvp_id, 'type' => 'hidden'));
                 echo $this->Form->input('Rsvp.IsCeremony', array('label' => '<span></span>I WILL BE ATTENDING THE CEREMONY', 'onclick' => 'clearNotAttending()'));
                 echo $this->Form->input('Rsvp.IsBanquet', array('label' => '<span></span>I WILL BE ATTENDING THE BANQUET', 'onclick' => 'clearNotAttending()'));
                 echo $this->Form->input('Rsvp.IsNotAttending', array('label' => '<span></span>SORRY I/WE CAN\'T MAKE IT', 'onclick' => 'notAttending()'));
             ?>
-            <br/><br/>ADD EXTRA GUEST(S) (IF APPLICABLE)
-            <div id="plusone_input">
-                <br/><input name="add_plusone_button" id="add_plusone_button" type="button" title="Add" />
-                <input name="data[Plusone][0][Guest_id]" type="hidden" id="PlusoneGuest_id" value=<?php echo $user; ?> />
-                <input name="data[Plusone][0][Name]" type="text" id="PlusoneName" placeholder="Please enter one guest at a time" title="Enter a name and then click on the '+' button if you have more than one guest to add"/>
-                <?php foreach ($rsvp_plusones as $key => $rsvp_plusone): ?>
-                        <?php echo $this->Form->input($rsvp_plusone, array('label' => false, 'value' => $rsvp_plusone, 'id' => 'PlusoneName', 'type' => 'text', 'class' => $key)); ?>
-                <?php endforeach; ?>
-
-            </div>
         </div>
     </div>
 <?php echo $this->Form->end((''));?>
@@ -41,11 +31,9 @@
     }
 ?>
 <div id="dialog-modal" title="FRIENDLY MESSAGE">
-
   <p>SORRY BUT YOU CAN'T HAVE THAT MANY PLUS ONES, WE'RE NOT MADE OUT OF MONEY ;).</p>
 </div>
 <div id="validate-modal" title="FRIENDLY MESSAGE">
-
   <p>YOU FORGOT TO SAY IF YOU ARE ATTENDING OR NOT :(.</p>
 </div>
-<?php echo $this->Html->script('../js/rsvp'); ?>
+<?php echo $this->Html->script('../js/editRsvp'); ?>

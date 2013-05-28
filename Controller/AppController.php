@@ -65,13 +65,11 @@ class AppController extends Controller {
 
         // load up data to display the plusones on the RSVP view page
         $this->loadModel("Plusone");
-        $this->set('rsvp_plusones', $rsvp_plusones = $this->Plusone->find('all',
+        $this->set('rsvp_plusones', $rsvp_plusones = $this->Plusone->find('list',
                             array('conditions' =>
                                     array('Plusone.Guest_id' => $guest_id)),
-                            array('fields' => ('Plusone.Name')),
-                            array('contains' => false)
+                            array('fields' => ('Plusone.Name'))
                         )
                   );
-        debug($rsvp_plusones);
     }
 }
