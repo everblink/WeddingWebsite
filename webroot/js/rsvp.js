@@ -51,8 +51,9 @@ function clearNotAttending(){
  *  the banquet checkbox is checked.
  * */
 function addPlusone(incrementalValue) {
-    var parentDiv = document.getElementById('plusone_input');
-
+    var parentDiv = document.getElementById('rsvp_checkboxes');
+    var newdiv = document.createElement('div');
+    var newdiv_idname = 'plusone_div';
     var newTextInput = document.createElement('input');
     var newRemoveButton = document.createElement('input');
 
@@ -67,17 +68,21 @@ function addPlusone(incrementalValue) {
 
     newRemoveButton.setAttribute('id',buttonName);
     newRemoveButton.setAttribute('type', 'button');
-    newRemoveButton.setAttribute('onclick', 'removePlusone("'+buttonName+'","'+ inputTextName+'");');
+    newRemoveButton.setAttribute('onclick', 'removePlusone("plusone[' + incrementalValue + ']");');
     newRemoveButton.setAttribute('class', 'removeButton');
     newRemoveButton.setAttribute('title', 'Delete');
 
     var hiddenGuestId = document.createElement('input');
+    parentDiv.appendChild(newdiv);
+    newdiv.setAttribute('class',newdiv_idname);
+    newdiv.setAttribute('id', 'plusone[' + incrementalValue + ']')
+
     hiddenGuestId.setAttribute('type','hidden');
     hiddenGuestId.setAttribute('value', document.getElementById('PlusoneGuest_id').value);
     hiddenGuestId.setAttribute('name','data[Plusone]['+ incrementalValue +'][Guest_id]');
-    parentDiv.appendChild(hiddenGuestId);
-    parentDiv.appendChild(newRemoveButton);
-    parentDiv.appendChild(newTextInput);
+    newdiv.appendChild(hiddenGuestId);
+    newdiv.appendChild(newRemoveButton);
+    newdiv.appendChild(newTextInput);
     currentInputText.value = '';
 }
 
@@ -87,14 +92,11 @@ var value = 1;
  *  Function that clears the not attending checkbox when either of the ceremony or
  *  the banquet checkbox is checked.
  * */
-function removePlusone(button, inputText) {
+function removePlusone(container) {
     value--;
-    var d = document.getElementById('plusone_input');
-    var oldButton = document.getElementById(button);
-    var oldInputText = document.getElementById(inputText);
+    var plusone = document.getElementById(container);
 
-    d.removeChild(oldButton);
-    d.removeChild(oldInputText);
+    $(plusone).remove();
 }
 
 function bindEvent(element, type, handler) {

@@ -315,7 +315,7 @@ a#logout_link.active {
     text-align: right;
 }
 
-.rsvp_checkboxes {
+#rsvp_checkboxes {
     text-align: left;
     width: 400px;
     padding: 0px;
@@ -388,20 +388,23 @@ a#logout_link.active {
     color: #FFF;
 }
 
-#RsvpAddForm input[type=text]#PlusoneName {
-    -webkit-transform:matrix(1, 0, 0, 1, 10, 0);
-    -moz-transform:matrix(1, 0, 0, 1, 10, 2);
-    -o-transform:matrix(1, 0, 0, 1, 10, 0);
-    -ms-transform:matrix(1, 0, 0, 1, 10, 0);
-    transform:matrix(1, 0, 0, 1, 10, 0);
+.plusone_div {
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 40px;
 }
 
-#RsvpAddForm input[type=text]{
-    -webkit-transform:matrix(1, 0, 0, 1, 10, -3.5);
-    -moz-transform:matrix(1, 0, 0, 1, 10, 1);
-    -o-transform:matrix(1, 0, 0, 1, 10, 1);
-    -ms-transform:matrix(1, 0, 0, 1, 10, 1);
-    transform:matrix(1, 0, 0, 1, 10, -2);
+.plusone_input input[type=text]#plusoneName,
+.plusone_div input[type=text] {
+    clear: both;
+    font-size: 18px;
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
+    background-image: url('../img/form_field.png');
+    background-color: transparent;
+    width: 320px;
+    border: none;
+    vertical-align: top;
+    margin-left: 12px;
 }
 
 #UserLoginForm .submit input[type=submit] {
@@ -419,10 +422,9 @@ a#logout_link.active {
 
 #add_plusone_button {
     width: 40px;
-    height: 40px;
+    height: 39px;
     background-image: url('../img/add_form_field_default.png');
     cursor: pointer;
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 3);
 }
 
 #add_plusone_button:hover {
@@ -435,16 +437,10 @@ a#logout_link.active {
 
 .removeButton {
     width: 40px;
-    height: 40px;
+    height: 39px;
     background-image: url('../img/delete_form_field_default.png');
     cursor: pointer;
     margin-right: 5px;
-    -webkit-transform:matrix(1, 0, 0, 1, 0, 1);
-    -moz-transform:matrix(1, 0, 0, 1, 0, 1);
-    -o-transform:matrix(1, 0, 0, 1, 0, 1);
-    -ms-transform:matrix(1, 0, 0, 1, 0, 1);
-    transform:matrix(1, 0, 0, 1, 0, 1);
-
 }
 
 .removeButton:hover {
@@ -688,7 +684,7 @@ input, textarea {
     background-color: transparent;
     padding: 10px;
     width: 320px;
-    /*height: 20px;*/
+    height: 20px;
     border: none;
 
 }
