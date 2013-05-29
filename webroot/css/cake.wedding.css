@@ -363,9 +363,9 @@ a#logout_link.active {
 #UserLoginForm legend{
     -webkit-transform:matrix(1, 0, 0, 1, 98, 0) !important;
     -moz-transform:matrix(1, 0, 0, 1, 98, 0) !important;
-    -o-transform:matrix(1, 0, 0, 1, 200, 0) !important;
+    -o-transform:matrix(1, 0, 0, 1, 290, 0) !important;
     -ms-transform:matrix(1, 0, 0, 1, 98, 0) !important;
-    transform:matrix(1, 0, 0, 1, -25, 0) !important;
+    transform:matrix(1, 0, 0, 1, 98, 0) !important;
 }
 
 #RsvpAddForm .submit input[type=submit],
@@ -811,7 +811,7 @@ form .submit input[type=submit]:hover {
     -ms-transform:matrix(1, 0, 0, 1, 98, 10);
     transform:matrix(1, 0, 0, 1, 98, 10);
     font-weight: normal;
-    content: none;
+
 
 }
 
