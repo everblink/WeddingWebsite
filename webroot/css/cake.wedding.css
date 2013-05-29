@@ -925,9 +925,12 @@ p.error,
     font-size: 16px;
 }
 
+.error_gif{
+    text-align: center;
+}
 p.error {
-    font-family: Monaco, Consolas, Courier, monospace;
-    font-size: 120%;
+    font-family: Gotham, Monaco, Consolas, Courier, monospace;
+    font-size: 16px;
     padding: 0.8em;
     margin: 1em 0;
 }

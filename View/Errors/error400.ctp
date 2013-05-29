@@ -21,10 +21,13 @@
 <p class="error">
 	<strong><?php echo __d('cake', 'Error'); ?>: </strong>
 	<?php printf(
-		__d('cake', 'The requested address %s was not found on this server.'),
+		__d('cake', 'The requested address %s was not found.'),
 		"<strong>'{$url}'</strong>"
 	); ?>
 </p>
+<div class="error_gif">
+    <?php echo  $this->Html->image('error.gif')?>
+</div>
 <?php
 if (Configure::read('debug') > 0):
 	echo $this->element('exception_stack_trace');

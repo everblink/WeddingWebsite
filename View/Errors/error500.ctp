@@ -22,6 +22,9 @@
 	<strong><?php echo __d('cake', 'Error'); ?>: </strong>
 	<?php echo __d('cake', 'An Internal Error Has Occurred.'); ?>
 </p>
+<div class="error_gif">
+    <?php echo  $this->Html->image('error.gif')?>
+</div>
 <?php
 if (Configure::read('debug') > 0):
 	echo $this->element('exception_stack_trace');
