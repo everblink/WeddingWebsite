@@ -1,5 +1,4 @@
 <div class="users form">
-<?php echo $this->Session->flash('auth'); ?>
 <?php echo $this->Form->create('User'); ?>
     <div class="request_song_text">
         <legend><?php echo __('PLEASE ENTER YOUR USERNAME AND PASSWORD'); ?></legend><br/>

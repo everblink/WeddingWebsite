@@ -4,7 +4,7 @@
 		<h2><?php echo __('RSVP'); ?></h2><br/>
 		LET US KNOW IF YOU WILL BE ATTENDING BY 1ST JULY 2013<br/>
 		PLEASE TICK ALL THAT APPLY:<br/><br/>
-		<div class="rsvp_checkboxes">
+		<div id="rsvp_checkboxes">
             <?php
                 echo $this->Form->create('Rsvp', array('action' => 'edit'));
                 echo $this->Form->input('Rsvp.Guest_id', array('value' => $user, 'type' => 'hidden'));

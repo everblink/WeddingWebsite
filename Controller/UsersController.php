@@ -32,7 +32,7 @@ public function isAuthorized($user) {
             if ($this->Auth->login()) {
                 $this->redirect($this->Auth->redirect());
             } else {
-                $this->Session->setFlash(__('Invalid username or password, try again'));
+                $this->Session->setFlash('You\'re username and or password was incorrect, please try again.','default',array('class'=>'error-message'));
             }
         }
     }
@@ -44,7 +44,7 @@ public function isAuthorized($user) {
  */
     public function logout() {
         $this->redirect($this->Auth->logout());
-        $this->Session->setFlash(__('You have logged out successfully'));
+        $this->Session->setFlash('You\'ve logged out successfully.','default',array('class'=>'success'));
     }
 
 /**

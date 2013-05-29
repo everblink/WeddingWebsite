@@ -57,10 +57,10 @@ public function isAuthorized($user) {
 		if ($this->request->is('post')) {
 			$this->Song->create();
 			if ($this->Song->save($this->request->data)) {
-				$this->Session->setFlash(__('The song has been saved'));
-				$this->redirect(array('action' => 'index'));
+				$this->Session->setFlash('Thanks for your song request.','default',array('class'=>'success'));
+				$this->redirect(array('action' => 'add'));
 			} else {
-				$this->Session->setFlash(__('The song could not be saved. Please, try again.'));
+				$this->Session->setFlash('Your song request could not be saved. Please, try again.', 'default',array('class'=>'error'));
 			}
 		}
 		$guests = $this->Song->Guest->find('list');

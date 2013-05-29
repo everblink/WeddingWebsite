@@ -42,7 +42,7 @@ public function isAuthorized($user) {
  */
 	public function view($id = null) {
 		if (!$this->Rsvp->exists($id)) {
-			throw new NotFoundException(__('Invalid rsvp'));
+			throw new NotFoundException('No record found','default',array('class'=>'error-message'));
 		}
 		$options = array('conditions' => array('Rsvp.' . $this->Rsvp->primaryKey => $id));
 		$this->set('rsvp', $this->Rsvp->find('first', $options));
@@ -68,10 +68,10 @@ public function isAuthorized($user) {
             }
 
             if ($this->Rsvp->save($this->request->data['Rsvp']) && $errors == 0) {
-                $this->Session->setFlash(__('The rsvp has been saved'));
+                $this->Session->setFlash('Thanks for responding, see you at the wedding!','default', array('class' => 'success'));
                 $this->redirect(array('action' => 'add'));
             } else {
-                $this->Session->setFlash(__('The rsvp could not be saved. Please, try again.'));
+                $this->Session->setFlash('Unfortunately something went wrong, let Jeff know and he\'ll fix it', 'default', array('class' => 'error-message'));
             }
         }
 
@@ -91,15 +91,15 @@ public function isAuthorized($user) {
  */
 	public function edit($id = null) {
 		if (!$this->Rsvp->exists($id)) {
-			throw new NotFoundException(__('Invalid rsvp'));
+			throw new NotFoundException('We can\'t find your response, please let Jeff know and he\'ll sort it out.','default',array('class'=>'error-message'));
 		}
 
 		if ($this->request->is('post') || $this->request->is('put')) {
 		    if ($this->Rsvp->save($this->request->data)) {
-				$this->Session->setFlash(__('The rsvp has been saved'));
+				$this->Session->setFlash('Thanks for updating us. See you soon!','default',array('class'=>'success'));
 				$this->redirect(array('action' => 'view/'.$id));
 			} else {
-				$this->Session->setFlash(__('The rsvp could not be saved. Please, try again.'));
+				$this->Session->setFlash('Oops, something went wrong, please try again and if all else fails, let Jeff know','default',array('class'=>'error-message'));
 			}
 		} else {
 			$options = array('conditions' => array('Rsvp.' . $this->Rsvp->primaryKey => $id));
