@@ -29,6 +29,5 @@ CHINESE BANQUET WILL TAKE PLACE<br/>
 AT GLAMOROUS RESTAURANT<br/>
 PLEASE ARRIVE BETWEEN 2PM AND 3PM<br/><br/>
 <?php echo  $this->Html->image('text_divider.png')?><br/><br/>
-DRESS CODE<br/>
 PLEASE DRESS FORMAL<br/>
 </div>

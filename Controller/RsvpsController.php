@@ -68,8 +68,8 @@ public function isAuthorized($user) {
             }
 
             if ($this->Rsvp->save($this->request->data['Rsvp']) && $errors == 0) {
-                $this->Session->setFlash('Thanks for responding, see you at the wedding!','default', array('class' => 'success'));
-                $this->redirect(array('action' => 'add'));
+                $this->Session->setFlash('Thanks for responding','default', array('class' => 'success'));
+                $this->redirect(array('controller' => 'pages', 'action' => 'home'));
             } else {
                 $this->Session->setFlash('Unfortunately something went wrong, let Jeff know and he\'ll fix it', 'default', array('class' => 'error-message'));
             }
@@ -96,7 +96,7 @@ public function isAuthorized($user) {
 
 		if ($this->request->is('post') || $this->request->is('put')) {
 		    if ($this->Rsvp->save($this->request->data)) {
-				$this->Session->setFlash('Thanks for updating us. See you soon!','default',array('class'=>'success'));
+				$this->Session->setFlash('Thanks for updating us.','default',array('class'=>'success'));
 				$this->redirect(array('action' => 'view/'.$id));
 			} else {
 				$this->Session->setFlash('Oops, something went wrong, please try again and if all else fails, let Jeff know','default',array('class'=>'error-message'));

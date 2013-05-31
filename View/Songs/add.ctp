@@ -23,3 +23,4 @@
              </div>";
     }
 ?>
+<?php echo $this->Html->script('../js/songRequest'); ?>

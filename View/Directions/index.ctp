@@ -12,7 +12,7 @@ MANCHESTER, M3 4JQ<br/>
 <?php echo  $this->Html->image('text_divider.png')?><br/><br/>
 BANQUET VENUE:<br/>
 GLAMOROUS CHINESE RESTAURANT<br/>
-1ST & 2NG FLOOR, WING YIP BUSINESS CENTRE,<br/>
+1ST & 2ND FLOOR, WING YIP BUSINESS CENTRE,<br/>
 OLDHAM ROAD, ANCOATS, <br/>
 MANCHESTER, M4 5HU<br/>
 <br/>
