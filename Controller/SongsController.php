@@ -83,7 +83,7 @@ public function isAuthorized($user) {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Song->save($this->request->data)) {
-				$this->Session->setFlash(__('The song has been saved'));
+				$this->Session->setFlash(__('The song has been saved.'));
 				$this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The song could not be saved. Please, try again.'));

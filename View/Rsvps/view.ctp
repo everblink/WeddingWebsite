@@ -6,7 +6,7 @@
 	    <?php if (($rsvp['Rsvp']['IsCeremony']) == 1 && ($rsvp['Rsvp']['IsBanquet']) == 0)
         	echo 'YOU ARE ATTENDING THE CEREMONY <br/><br/>'; ?>
         <?php if (($rsvp['Rsvp']['IsCeremony']) == 0 && ($rsvp['Rsvp']['IsBanquet']) == 1)
-        	echo 'YOU ARE ATTENDING THE BANQUET <br/>'; ?>
+        	echo 'YOU ARE ATTENDING THE BANQUET <br/><br/>'; ?>
         <?php if (($rsvp['Rsvp']['IsNotAttending']) == 1)
             echo 'YOU ARE NOT ATTENDING THE WEDDING :( <br/><br/>';?>
         <?php if ($rsvp['Rsvp']['IsNotAttending'] != 1) : ?>

@@ -768,13 +768,13 @@ form .submit input[type=submit] {
     padding: 8px 10px;
 }
 form .submit input[type=submit]:hover {
-    background-image:  url('../img/button_hover.png');
+    background-image:  url('../img/button_submit_hover.png');
     color: #FFF;
 }
 
 /* Homepage text*/
 .home_page_text,
-.gifts,
+.gifts_text,
 .directions,
 .hotels,
 .menus,

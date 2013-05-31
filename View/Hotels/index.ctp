@@ -1,8 +1,6 @@
-<div class="hotels index">
-	<h2><?php echo __('HOTELS'); ?></h2>
-</div>
 <div class="hotels_text">
-BELOW IS A LIST OF HOTELS NEAR THE VENUES:<br/><br/>
+	<h2><?php echo __('HOTELS'); ?></h2>
+<br/>BELOW IS A LIST OF HOTELS NEAR THE VENUES:<br/><br/>
 <a href="http://www.marriott.co.uk/hotels/travel/manva-manchester-marriott-victoria-and-albert-hotel/" target="_blank">Manchester Marriott - Victoria & Albert</a><br/>
 <a href="http://www.roomzzz.co.uk/" target="_blank">Roomzzz</a><br/>
 <a href="http://www.accorhotels.com/gb/hotel-3142-ibis-manchester-centre-portland-street/index.shtml" target="_blank">Ibis Hotel</a><br/>

@@ -1,4 +1,3 @@
-<!--<?php debug($user); ?>-->
 <div class="messages form">
 <?php echo $this->Form->create('Message'); ?>
 	<div class="message_text">
@@ -8,5 +7,18 @@
 		echo $this->Form->textarea('Message');
 	?>
 	</div>
-<?php echo $this->Form->end(('')); ?>
+	<?php echo $this->Form->end(('')); ?>
+<?php
+    if ($role == "admin")
+    {
+        echo "<div class=\"actions\">
+             	<h3>" . __('Actions') . "</h3>
+             	<ul>
+             		<li>" . $this->Html->link(__('List Messages'), array('action' => 'index')) . "</li>
+             		<li>" . $this->Html->link(__('List Guests'), array('controller' => 'guests', 'action' => 'index')). "</li>
+             		<li>" . $this->Html->link(__('New Guest'), array('controller' => 'guests', 'action' => 'add')) . "</li>
+             	</ul>
+             </div>";
+    }
+?>
 </div>

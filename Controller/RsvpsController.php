@@ -42,7 +42,7 @@ public function isAuthorized($user) {
  */
 	public function view($id = null) {
 		if (!$this->Rsvp->exists($id)) {
-			throw new NotFoundException('No record found','default',array('class'=>'error-message'));
+			throw new NotFoundException('No record found.','default',array('class'=>'error-message'));
 		}
 		$options = array('conditions' => array('Rsvp.' . $this->Rsvp->primaryKey => $id));
 		$this->set('rsvp', $this->Rsvp->find('first', $options));
@@ -68,10 +68,10 @@ public function isAuthorized($user) {
             }
 
             if ($this->Rsvp->save($this->request->data['Rsvp']) && $errors == 0) {
-                $this->Session->setFlash('Thanks for responding','default', array('class' => 'success'));
+                $this->Session->setFlash('Thanks for responding.','default', array('class' => 'success'));
                 $this->redirect(array('controller' => 'pages', 'action' => 'home'));
             } else {
-                $this->Session->setFlash('Unfortunately something went wrong, let Jeff know and he\'ll fix it', 'default', array('class' => 'error-message'));
+                $this->Session->setFlash('Unfortunately something went wrong, let Jeff know and he\'ll fix it.', 'default', array('class' => 'error-message'));
             }
         }
 
@@ -99,7 +99,7 @@ public function isAuthorized($user) {
 				$this->Session->setFlash('Thanks for updating us.','default',array('class'=>'success'));
 				$this->redirect(array('action' => 'view/'.$id));
 			} else {
-				$this->Session->setFlash('Oops, something went wrong, please try again and if all else fails, let Jeff know','default',array('class'=>'error-message'));
+				$this->Session->setFlash('Oops, something went wrong, please try again and if all else fails, let Jeff know.','default',array('class'=>'error-message'));
 			}
 		} else {
 			$options = array('conditions' => array('Rsvp.' . $this->Rsvp->primaryKey => $id));
