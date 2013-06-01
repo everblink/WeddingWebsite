@@ -43,8 +43,8 @@ public function isAuthorized($user) {
  * @return void
  */
     public function logout() {
-        $this->redirect($this->Auth->logout());
         $this->Session->setFlash('You\'ve logged out successfully.','default',array('class'=>'success'));
+        $this->redirect($this->Auth->logout());
     }
 
 /**

@@ -38,7 +38,8 @@ class AppController extends Controller {
             'Session',
             'Auth' => array(
                 'loginRedirect' => array('controller' => 'pages', 'action' => 'index'),
-                'logoutRedirect' => array('controller' => 'pages', 'action' => 'index'),
+                'logoutRedirect' => array('controller' => 'users', 'action' => 'login'),
+                'authError'=>"You can't access that page",
                 'authorize' => array('Controller')
             )
     );
