@@ -2,6 +2,9 @@
 <?php echo $this->Form->create('Song'); ?>
 	<div class="request_song_text">
 		<h2><?php echo __('REQUEST A SONG'); ?></h2><br/>
+		PLEASE SUBMIT BELOW IF YOU WOULD LIKE TO<br/>
+		REQUEST A SONG TO BE PLAYED DURING THE BANQUET.<br/>
+		IT MAY JUST MAKE IT ONTO OUR PLAYLIST!<br/><br/><br/>
 	<?php
 		echo $this->Form->input('Artist', array('label' => 'ARTIST'));
 		echo $this->Form->input('Title', array('label' => 'SONG'));

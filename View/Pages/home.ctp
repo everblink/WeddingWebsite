@@ -18,8 +18,9 @@
  */
 ?>
 <div class="home_page_text">
-YOU ARE INVITED TO THE WEDDING OF<br/>
+YOU ARE INVITED TO THE WEDDING OF<br/><br/>
 <font class="home_page_couple_text">JEFF & WAH YAN</font><br/><br/>
+ON SUNDAY 18TH AUGUST 2013<br/><br/>
 <?php echo  $this->Html->image('text_divider.png')?><br/><br/>
 CEREMONY WILL START AT 12 NOON<br/>
 AT MANCHESTER VICTORIA & ALBERT HOTEL<br/>

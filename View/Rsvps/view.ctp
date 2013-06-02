@@ -9,17 +9,17 @@
         	echo 'YOU ARE ATTENDING THE BANQUET <br/><br/>'; ?>
         <?php if (($rsvp['Rsvp']['IsNotAttending']) == 1)
             echo 'YOU ARE NOT ATTENDING THE WEDDING :( <br/><br/>';?>
-        <?php if ($rsvp['Rsvp']['IsNotAttending'] != 1) : ?>
-            <?php if ($rsvp_plusones == true) : ?>
+        <?php if (($rsvp['Rsvp']['IsNotAttending'] != 1) && ($rsvp_plusones == true)) : ?>
                 <br/><?php echo  $this->Html->image('text_divider.png')?><br/><br/>
                 YOU'LL BE ACCOMPANIED BY THE FOLLOWING:<br/><br/>
                 <?php foreach ($rsvp_plusones as $rsvp_plusone): ?>
                     <?php echo $rsvp_plusone; ?><br/>
                 <?php endforeach; ?>
-                <br/><?php echo  $this->Html->image('text_divider.png')?><br/><br/>
-                IF YOU NEED TO CHANGE YOUR GUEST DETAILS<br/>THEN PLEASE CONTACT JEFF DIRECTLY VIA 07701031726.
-                <br/><br/><br/>
-            <?php endif ?>
+        <?php endif ?>
+        <?php if ($rsvp['Rsvp']['IsNotAttending'] != 1) : ?>
+            <br/><?php echo  $this->Html->image('text_divider.png')?><br/><br/>
+            IF YOU NEED TO AMEND YOUR GUEST DETAILS<br/>THEN PLEASE CONTACT JEFF DIRECTLY VIA 07701031726.
+            <br/><br/><br/>
         <?php endif ?>
 	    <?php echo $this->Html->link('',array('action' => 'edit', $rsvp['Rsvp']['Id']), array('id' => 'rsvp_plusone_edit'));
         ?>
