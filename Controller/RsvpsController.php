@@ -54,26 +54,38 @@ public function isAuthorized($user) {
  * @return void
  */
 	public function add() {
-	    if ($this->request->is('post')) {
-            $errors = 0;
-            $this->Rsvp->create();
+        $this->set('rsvp_done', $rsvp_done = $this->Rsvp->find('first',
+                                        array('conditions' =>
+                                            array('Rsvp.Guest_id' => $this->Auth->user('guest_id')))));
+        if ($rsvp_done == true)
+            $this->set('rsvp_id', $rsvp_id = $rsvp_done['Rsvp']['Id']);
+        else
+            $this->set('rsvp_id', $rsvp_id = 0);
 
-            foreach($this->request->data['Plusone'] as $plusone) {
-                if ($plusone['Name'] != '') {
-                    $this->Rsvp->Guest->Plusone->create();
-                    if(!$this->Rsvp->Guest->Plusone->save($plusone)) {
-                        $errors++;
+	    if (!$this->Rsvp->exists($rsvp_id)){
+            if ($this->request->is('post')) {
+                $errors = 0;
+                $this->Rsvp->create();
+
+                foreach($this->request->data['Plusone'] as $plusone) {
+                    if ($plusone['Name'] != '') {
+                        $this->Rsvp->Guest->Plusone->create();
+                        if(!$this->Rsvp->Guest->Plusone->save($plusone)) {
+                            $errors++;
+                        }
                     }
                 }
-            }
 
-            if ($this->Rsvp->save($this->request->data['Rsvp']) && $errors == 0) {
-                $this->Session->setFlash('Thanks for responding.','default', array('class' => 'success'));
-                $this->redirect(array('controller' => 'pages', 'action' => 'home'));
-            } else {
-                $this->Session->setFlash('Unfortunately something went wrong, let Jeff know and he\'ll fix it.', 'default', array('class' => 'error-message'));
+                if ($this->Rsvp->save($this->request->data['Rsvp']) && $errors == 0) {
+                    $this->Session->setFlash('Thanks for responding.','default', array('class' => 'success'));
+                    $this->redirect(array('controller' => 'pages', 'action' => 'home'));
+                } else {
+                    $this->Session->setFlash('Unfortunately something went wrong, let Jeff know and he\'ll fix it.', 'default', array('class' => 'error-message'));
+                }
             }
         }
+        else
+            $this->redirect(array('controller' => 'rsvps', 'action' => 'view/'. $rsvp_id));
 
         $guests = $this->Rsvp->Guest->find('list');
         $user = $this->Auth->user('guest_id');

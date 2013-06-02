@@ -62,7 +62,7 @@ class AppController extends Controller {
         if ($rsvp_done == true)
             $this->set('rsvp_id', $rsvp_id = $rsvp_done['Rsvp']['Id']);
         else
-            $this->set('rsvp_id', $rsvp_id = '0');
+            $this->set('rsvp_id', $rsvp_id = 0);
 
         // load up data to display the plusones on the RSVP view page
         $this->loadModel("Plusone");
