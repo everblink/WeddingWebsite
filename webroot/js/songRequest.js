@@ -1,6 +1,6 @@
 //http://youtu.be/dQw4w9WgXcQ
 
-$("#SongAddForm").submit(function() {
+/*$("#SongAddForm").submit(function() {
     if ($("#SongArtist").val() === "Rick Astley" || $("#SongTitle").val() === "Never gonna give you up" )
     {
         /*$(function () {
@@ -18,4 +18,4 @@ $("#SongAddForm").submit(function() {
     }
     else
         return true;
-});
+});*/
