@@ -42,4 +42,4 @@
 <div id="validate-modal" title="FRIENDLY MESSAGE">
   <p>YOU FORGOT TO SAY IF YOU ARE ATTENDING OR NOT :(.</p>
 </div>
-<?php echo $this->Html->script('../js/rsvp'); ?>
+<?php echo $this->Html->script('../js/rsvp.min'); ?>

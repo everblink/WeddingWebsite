@@ -30,38 +30,15 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.wedding');
-        echo $this->Html->css('jbclock');
-        echo $this->Html->css('jquery-ui-1.10.3.custom');
-
-        echo $this->Html->script('jquery-1.8.0.min');
-        echo $this->Html->script('jquery-ui-1.10.3.custom');
-        echo $this->Html->script('jbclock');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+        echo $this->Html->css('cake.wedding.min');
+        echo $this->Html->css('jbclock.min');
+        echo $this->Html->css('jquery-ui-1.10.3.custom.min');
 
         /* Set start and end dates here */
         $startDate  = strtotime("22 February 2013 12:00:00");
         $endDate    = strtotime("18 August 2013 12:00:00");
         /* /Set start and end dates here */
     ?>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            JBCountDown({
-                secondsColor : "#FFF",
-                minutesColor : "#FFF",
-                hoursColor   : "#FFF",
-                daysColor    : "#FFF",
-
-                startDate   : "<?php echo $startDate; ?>",
-                endDate     : "<?php echo $endDate; ?>",
-                now         : "<?php echo strtotime('now'); ?>",
-                seconds     : "<?php echo date("s"); ?>"
-            });
-        });
-    </script>
 </head>
 <body>
 	<div id="container">
@@ -211,4 +188,27 @@ $cakeDescription = __d('cake_dev', 'Jeff and Wah Yan\'s Wedding');
 	<?php echo $this->element('sql_dump'); ?>
 
 </body>
+<?php
+        echo $this->Html->script('jquery-1.8.0.min');
+        echo $this->Html->script('jquery-ui-1.10.3.custom.min');
+        echo $this->Html->script('jbclock.min');
+
+ 		
+ 		echo $this->fetch('script');
+?>
+<script type="text/javascript">
+        $(document).ready(function(){
+            JBCountDown({
+                secondsColor : "#FFF",
+                minutesColor : "#FFF",
+                hoursColor   : "#FFF",
+                daysColor    : "#FFF",
+
+                startDate   : "<?php echo $startDate; ?>",
+                endDate     : "<?php echo $endDate; ?>",
+                now         : "<?php echo strtotime('now'); ?>",
+                seconds     : "<?php echo date("s"); ?>"
+            });
+        });
+    </script>
 </html>
