@@ -34,6 +34,16 @@ public function isAuthorized($user) {
 	}
 
 /**
+ * report method that returns the number of guests that will be attending the wedding.
+ *
+ * @return void
+ */
+	public function report() {
+		$this->Rsvp->recursive = 0;
+		$this->set('rsvps', $this->paginate());
+	}
+
+/**
  * view method
  *
  * @throws NotFoundException
