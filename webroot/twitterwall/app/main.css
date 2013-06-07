@@ -1,0 +1,280 @@
+
+a {
+    color: #003d4c;
+    text-decoration: underline;
+    font-weight: bold;
+}
+a:hover {
+    color: #367889;
+    text-decoration:none;
+}
+a img {
+    border:none;
+    padding: 24px 20px;
+}
+
+.image a img {
+    border:none;
+    padding: 24px 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    margin-bottom:0.5em;
+}
+h1 {
+    background:#C5F9EB;
+    color: #003d4c;
+    font-size: 100%;
+}
+h2 {
+    background:#C5F9EB;
+    color: #3C4F46;
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
+    font-size: 190%;
+}
+h3 {
+    color: #2c6877;
+    font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+    font-size: 165%;
+}
+h4 {
+    color: #993;
+    font-weight: normal;
+}
+ul, li {
+    margin: 0 12px;
+}
+p {
+    margin: 0 0 1em 0;
+}
+
+.image_wrapper {
+    position: absolute;
+    top: 234px;
+    padding-top: 24px;
+}
+
+.image {
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    height:40px;
+}
+
+a#when_where_link, a#rsvp_link, a#banquet_menu_link, a#directions_link,
+a#hotels_link, a#request_song_link, a#note_link, a#gifts_link, a#logout_link {
+    display: block;
+    width:240px ;
+    height:40px ;
+    -webkit-transform:matrix(1, 0, 0, 1, 20, 2);
+    -moz-transform:matrix(1, 0, 0, 1, 20, 2);
+    -o-transform:matrix(1, 0, 0, 1, 20, 2);
+    -ms-transform:matrix(1, 0, 0, 1, 20, 2);
+    transform:matrix(1, 0, 0, 1, 20, 2);
+}
+
+a#when_where_link {
+    background     : transparent url('../img/menu_where_when_default.png') no-repeat;
+}
+
+a#when_where_link:hover {
+    background     : url('../img/menu_wherewhen_hover.png') no-repeat;
+}
+
+a#when_where_link.active {
+    background     : transparent url('../img/menu_wherewhen_active.png') no-repeat;
+}
+
+a#rsvp_link {
+    background     : transparent url('../img/menu_rsvp_default.png') no-repeat;
+}
+
+a#rsvp_link:hover {
+    background     : url('../img/menu_rsvp_hover.png') no-repeat;
+}
+
+a#rsvp_link.active {
+    background     : transparent url('../img/menu_rsvp_active.png') no-repeat;
+}
+
+a#banquet_menu_link {
+    background     : transparent url('../img/menu_banquet_default.png') no-repeat;
+}
+
+a#banquet_menu_link:hover {
+    background     : url('../img/menu_banquet_hover.png') no-repeat;
+}
+
+a#banquet_menu_link.active {
+    background     : transparent url('../img/menu_banquet_active.png') no-repeat;
+}
+
+a#directions_link {
+     background     : transparent url('../img/menu_directions_default.png') no-repeat;
+ }
+
+a#directions_link:hover {
+    background     : url('../img/menu_directions_hover.png') no-repeat;
+}
+
+a#directions_link.active {
+    background     : transparent url('../img/menu_directions_active.png') no-repeat;
+}
+
+a#hotels_link {
+    background     : transparent url('../img/menu_hotels_default.png') no-repeat;
+}
+
+a#hotels_link:hover {
+    background     : url('../img/menu_hotels_hover.png') no-repeat;
+}
+
+a#hotels_link.active {
+    background     : transparent url('../img/menu_hotels_active.png') no-repeat;
+}
+
+a#request_song_link {
+    background     : transparent url('../img/menu_request_default.png') no-repeat;
+}
+
+a#request_song_link:hover {
+    background     : url('../img/menu_request_hover.png') no-repeat;
+}
+
+a#request_song_link.active {
+    background     : transparent url('../img/menu_request_active.png') no-repeat;
+}
+
+a#note_link {
+    background     : transparent url('../img/menu_leavenote_default.png') no-repeat;
+}
+
+a#note_link:hover {
+    background     : url('../img/menu_leavenote_hover.png') no-repeat;
+}
+
+a#note_link.active {
+    background     : transparent url('../img/menu_leavenote_active.png') no-repeat;
+}
+
+a#gifts_link {
+    background     : transparent url('../img/menu_gifts_default.png') no-repeat;
+}
+
+a#gifts_link:hover {
+    background     : url('../img/menu_gifts_hover.png') no-repeat;
+}
+
+a#gifts_link.active {
+    background     : transparent url('../img/menu_gifts_active.png') no-repeat;
+}
+
+a#logout_link {
+    background     : transparent url('../img/menu_logout_default.png') no-repeat;
+}
+
+a#logout_link:hover {
+    background     : url('../img/menu_logout_hover.png') no-repeat;
+}
+
+a#logout_link.active {
+    background     : transparent url('../img/menu_logout_active.png') no-repeat;
+}
+
+.image h2 {
+    font-size:0px;
+    line-height:0px;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0);
+    -webkit-transform:matrix(1, 0, 0, 1, 0, 46);
+    -moz-transform:matrix(1, 0, 0, 1, 0, 46);
+    -o-transform:matrix(1, 0, 0, 1, 0, 46);
+    -ms-transform:matrix(1, 0, 0, 1, 0, 46);
+    transform:matrix(1, 0, 0, 1, 0, 46);
+}
+
+.image h2 span{
+    font-family: Gotham, 'lucida grande',verdana,helvetica,arial,sans-serif;
+    font-size:18px;
+    letter-spacing: -1px;
+    color:rgb(60, 79, 70);
+}
+
+/** Layout **/
+#container {
+    text-align: left;
+    display: block;
+    margin: auto;
+    width: 1024px;
+}
+
+#header{
+    padding: 0px 0px;
+}
+#header h1 {
+    color: #3C4F46;
+    padding: 0px 0px;
+    margin-top: 0px;
+    text-shadow: 0px 0px 0px;
+}
+#sidebar_wrapper{
+    width: 280px;
+    height: 100%;
+    overflow: hidden;
+}
+#left_sidebar{
+    background: #C5F9EB;
+    background-image: url('../images/pattern_left_edge.png');
+    height: 100%;
+    width: 8px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transform:matrix(1, 0, 0, 1, -8, 0);
+    -moz-transform:matrix(1, 0, 0, 1, -8, 0);
+    -o-transform:matrix(1, 0, 0, 1, -8, 0);
+    -ms-transform:matrix(1, 0, 0, 1, -8, 0);
+    transform:matrix(1, 0, 0, 1, -8, 0);
+}
+#sidebar{
+    background: #C5F9EB;
+    background-image: url('../images/pattern.png');
+    height: 100%;
+    width: 240px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+}
+#right_sidebar{
+    background: #C5F9EB;
+    background-image: url('../images/pattern_right_edge.png');
+    height: 100%;
+    width: 8px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transform:matrix(1, 0, 0, 1, 240, 0);
+    -moz-transform:matrix(1, 0, 0, 1, 240, 0);
+    -o-transform:matrix(1, 0, 0, 1, 240, 0);
+    -ms-transform:matrix(1, 0, 0, 1, 240, 0);
+    transform:matrix(1, 0, 0, 1, 240, 0);
+}
+
+#content{
+    background: #C5F9EB;
+    float: right;
+    color: #3C4F46;
+    padding: 10px 20px 40px 20px;
+    width: 720px;
+    /*display: inline;*/
+    font-size: 12px;
+    overflow: hidden;
+}
+#footer {
+    clear: both;
+    padding: 6px 10px;
+    text-align: right;
+}
+

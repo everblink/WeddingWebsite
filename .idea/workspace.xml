@@ -20,19 +20,37 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/twitterwall/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="36" selection-start="935" selection-end="1323" vertical-scroll-proportion="0.0">
+            <state line="18" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webroot/twitterwall/config.js">
+      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/screen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="417" selection-end="417" vertical-scroll-proportion="0.17586207">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/twitterwall/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="32" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.ctp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="156" column="12" selection-start="7888" selection-end="7918" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,17 +59,31 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webroot/twitterwall/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="18" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-29.384615">
+            <state line="26" column="0" selection-start="891" selection-end="891" vertical-scroll-proportion="-15.730769">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="262" column="1" selection-start="6092" selection-end="6092" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RsvpsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/RsvpsController.php">
+      <file leaf-file-name="twitterlib.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/js/twitterlib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="86" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1351762188000" expanded="false" signature="12909:12935" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,37 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Rsvps/index.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="2286" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Rsvps/view.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="12" selection-start="0" selection-end="2497" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="481" column="0" selection-start="13326" selection-end="13326" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Rsvps/edit.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="46" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0">
+            <state line="389" column="0" selection-start="10979" selection-end="10979" vertical-scroll-proportion="0.55632186">
               <folding />
             </state>
           </provider>
@@ -111,10 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/View/Rsvps/view.ctp" />
-        <option value="$PROJECT_DIR$/Controller/AppController.php" />
-        <option value="$PROJECT_DIR$/webroot/css/cake.wedding.min.css" />
-        <option value="$PROJECT_DIR$/webroot/css/jbclock.min.css" />
         <option value="$PROJECT_DIR$/webroot/css/jquery-ui-1.10.3.custom.min.css" />
         <option value="$PROJECT_DIR$/webroot/js/editRsvp.min.js" />
         <option value="$PROJECT_DIR$/webroot/js/jbclock.min.js" />
@@ -124,9 +125,13 @@
         <option value="$PROJECT_DIR$/View/Layouts/default.ctp" />
         <option value="$PROJECT_DIR$/Controller/RsvpsController.php" />
         <option value="$PROJECT_DIR$/View/Rsvps/report.ctp" />
+        <option value="$PROJECT_DIR$/webroot/twitterwall/config.js" />
+        <option value="$PROJECT_DIR$/webroot/twitterwall/app/screen.css" />
+        <option value="$PROJECT_DIR$/webroot/twitterwall/custom.css" />
+        <option value="$PROJECT_DIR$/webroot/twitterwall/app/cake.wedding.css" />
+        <option value="$PROJECT_DIR$/webroot/twitterwall/app/main.css" />
         <option value="$PROJECT_DIR$/webroot/twitterwall/index.html" />
         <option value="$PROJECT_DIR$/webroot/twitterwall/app/js/app.js" />
-        <option value="$PROJECT_DIR$/webroot/twitterwall/config.js" />
       </list>
     </option>
   </component>
@@ -209,6 +214,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="twitterwall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitterwall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wedding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webroot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitterwall" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -773,41 +826,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webroot/js/rsvp.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2545" selection-start="2545" selection-end="2545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/js/songRequest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Users/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Pages/home.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Messages/add.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/View/Rsvps/add.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="42" selection-start="2468" selection-end="2468" vertical-scroll-proportion="0.0">
@@ -818,13 +836,6 @@
     <entry file="file://$PROJECT_DIR$/View/Rsvps/edit.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="46" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="36" selection-start="935" selection-end="1323" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -864,23 +875,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/twitterwall/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/js/twitterlib.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1351762188000" expanded="false" signature="12909:12935" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/twitterwall/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="32" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/css/cake.wedding.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="715" selection-end="813" vertical-scroll-proportion="0.46896553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="1" selection-start="6092" selection-end="6092" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/Layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="12" selection-start="7888" selection-end="7918" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webroot/twitterwall/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="18" selection-start="2860" selection-end="2860" vertical-scroll-proportion="-29.384615">
-          <folding />
+        <state line="26" column="0" selection-start="891" selection-end="891" vertical-scroll-proportion="-15.730769">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#li#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webroot/twitterwall/app/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="481" column="0" selection-start="13326" selection-end="13326" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webroot/twitterwall/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="417" selection-end="417" vertical-scroll-proportion="0.17586207">
+        <state line="389" column="0" selection-start="10979" selection-end="10979" vertical-scroll-proportion="0.55632186">
           <folding />
         </state>
       </provider>

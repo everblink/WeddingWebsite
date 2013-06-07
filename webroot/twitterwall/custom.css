@@ -1,12 +1,7 @@
 @font-face {
-    font-family: 'Cabin Sketch';
-    src: url('fonts/cabinsketch-bold-webfont.eot');
-    src: url('fonts/cabinsketch-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/cabinsketch-bold-webfont.woff') format('woff'),
-         url('fonts/cabinsketch-bold-webfont.ttf') format('truetype'),
-         url('fonts/cabinsketch-bold-webfont.svg#CabinSketchBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: Gotham;
+    src: url(./Gotham-Book.otf);
+    font-weight:400;
 }
 
 html {
@@ -17,18 +12,16 @@ html {
 }
 
 body {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: Gotham, 'Century Gothic', sans-serif;
   color: #93cfd6;
-  font-size: 24px; 
+  font-size: 22px;
 }
 
 #schedule div {
   position: absolute;
-  bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(255,255,255,0.6);
-
+  background-color: #c5f9ec;
   padding: 20px;
 }
 
