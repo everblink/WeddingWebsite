@@ -109,7 +109,8 @@ function parseTiming(t) {
 function findNextSchedule(delayM, after) {
   var due = null,
       t = after ? parseTime(after) : window.debugTime || (new Date()).getTime(),
-      times = Object.keys(SCHEDULE).sort();
+      times = Object.keys(SCHEDULE).sort(),
+      s = null;
 
   for (var i = 0; i < times.length; i++) {
     s = times[i];
@@ -117,7 +118,7 @@ function findNextSchedule(delayM, after) {
   }
 
   first = false;
-  
+
   return s;
 }
  
@@ -366,7 +367,7 @@ function notices() {
       setTimeout(show, customTiming || config.timings.defaultNoticeHoldTime || 10 * 1000);
     };
     show();
-  } 
+  }
 }
 
 function init() {
@@ -389,7 +390,7 @@ function init() {
   $('#schedule > div').hide();
 
   run();
-  // schedule();
+   schedule();
   showSchedule(findNextSchedule(config.timings.showNextScheduleEarlyBy || 0));
   notices();
   // listenForWinner();
