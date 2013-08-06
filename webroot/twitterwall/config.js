@@ -1,9 +1,9 @@
 var config = {
-  debug: true,
-  title: 'Twitter wall built by @rem',
+  debug: false,
+  title: 'Jeff & Wah Yan - Twitter Wall #JeffAndWahYan',
 
-  search: 'from:@fullfrontalconf OR @fullfrontalconf OR #fullfrontalconf OR #fullfrontal2011 OR full-frontal.org OR #fullfrontal11',
-  list: 'fullfrontalconf/delegates11', // optional, just comment it out if you don't want it
+  search: 'from:#jeffandwahyan',
+  //list: 'fullfrontalconf/delegates11', // optional, just comment it out if you don't want it
 
   timings: {
     showNextScheduleEarlyBy: '5m', // show the next schedule 10 minutes early

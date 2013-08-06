@@ -72,7 +72,7 @@ body {
 /* twitter colours */
 #tweets a { color: rgba(255,255,255,0.7); }
 .hentry .meta, #tweets .meta a { color: #99CFD7; }
-#tweets li { background: rgba(255, 255, 255, 0.2); }
+#tweets li { background: rgba(26, 24, 24, 0.66); }
 .tweet { color: #fff; }
 
 /* this simply puts a large background image on the schedule element if it matches the schedule time */

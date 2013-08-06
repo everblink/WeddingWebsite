@@ -66,9 +66,9 @@
         '&lt;': '<',
         '&gt;': '>'
       },
-      protocol = document.location.protocol.substr(0, 4) == 'http' ? document.location.protocol : 'http:',
+      protocol = document.location.protocol.substr(0, 4) == 'https' ? document.location.protocol : 'https:',
       URLS = {
-        search: protocol + '//search.twitter.com/search.json?q=%search%&page=%page|1%&rpp=%limit|100%&since_id=%since|remove%&result_type=recent&include_entities=true', // TODO allow user to change result_type
+        search: protocol + '//api.twitter.com/1.1/search/tweets.json?q=%search%&page=%page|1%&rpp=%limit|100%&since_id=%since|remove%&result_type=recent&include_entities=true', // TODO allow user to change result_type
         timeline: protocol + '//api.twitter.com/1/statuses/user_timeline.json?screen_name=%user%&count=%limit|200%&page=%page|1%&since_id=%since|remove%include_rts=%rts|false%&include_entities=true',
         list: protocol + '//api.twitter.com/1/%user%/lists/%list%/statuses.json?page=%page|1%&per_page=%limit|200%&since_id=%since|remove%&include_entities=true&include_rts=%rts|false%',
         favs: protocol + '//api.twitter.com/1/favorites/%user%.json?include_entities=true&skip_status=true&page=%page|1%&since_id=%since|remove%',
